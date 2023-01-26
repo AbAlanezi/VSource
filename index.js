@@ -37,3 +37,4 @@ const getApi = (apiLink)=>{
   function grtFruit(val) {
     console.log(val)
   }
+
