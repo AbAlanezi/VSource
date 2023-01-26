@@ -34,5 +34,7 @@ const getApi = (apiLink)=>{
     console.error(rej);
   });
 
+  function grtFruit(val) {
+    console.log(val)
+  }
 
-  // function fetch data
