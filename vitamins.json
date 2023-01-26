@@ -1,0 +1,18 @@
+[
+    {
+      "A": {
+        "food": ["papaya", "food2"],
+        "pic": ["imgs/papaya.png",""],
+      },
+    
+      "B": {
+        "food": ["litchi", "food2"],
+        "pic": ["imgs/litchi.png",""],
+      },
+
+      "C": {
+        "food": ["kiwi", "food2"],
+        "pic": ["imgs/kiwi.png",""],
+      }
+    }
+]
