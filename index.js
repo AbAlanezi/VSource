@@ -36,7 +36,3 @@ const getApi = (apiLink)=>{
 
 
   // function fetch data
-
-  function getFruit(){
-   
-  }
