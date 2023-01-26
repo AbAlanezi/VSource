@@ -33,3 +33,6 @@ const getApi = (apiLink)=>{
   }).catch((rej) => {
     console.error(rej);
   });
+
+
+  // function fetch data

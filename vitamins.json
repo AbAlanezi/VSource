@@ -2,7 +2,7 @@
     {
       "A": {
         "food": ["papaya", "Mango", "Cantaloupe", "Grapefruit", "Watermelon", "Fresh apricots", "Tangerine", "Nectarine", "Guava"],
-        "pic": ["imgs/papaya.png",""]
+        "pic": ["imgs/papaya.png","imgs/papaya.png"]
       },
       "C": {
         "food": ["Guava", "Pineapple", "Strawberries", "Kiwi", "Mango", "Papaya"],
