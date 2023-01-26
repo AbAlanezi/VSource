@@ -33,3 +33,7 @@ const getApi = (apiLink)=>{
   }).catch((rej) => {
     console.error(rej);
   });
+
+  function grtFruit(val) {
+    console.log(val)
+  }
