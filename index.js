@@ -37,9 +37,10 @@ let cards = document.getElementById("cards")
         card.className = "card"
         col.append(card);
 
-        let icon = document.createElement("i")
+        let icon = document.createElement("button")
         icon.className = "fa-solid fa-heart"
         card.append(icon);
+        icon.setAttribute("onclick", "savedCard(this.parentElement.lastChild.firstChild.textContent)")
 
         let img = document.createElement("img");
         img.className = "card-img-top"
@@ -77,4 +78,13 @@ function cardsGroup() {
     e.currentTarget.classList.toggle("crimson")
     
   }))
+}
+
+let favArr = []
+function savedCard(par){
+  if(!favArr.includes(par)){
+    favArr.push(par)
+    localStorage.setItem('favouriteCard', favArr);
+  }
+console.log(favArr);
 }

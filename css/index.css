@@ -50,3 +50,8 @@ footer a{
 .crimson{
   color: crimson;
 }
+
+#cards{
+  padding: 3rem;
+  margin: 0;
+}
