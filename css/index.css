@@ -16,6 +16,10 @@ footer a{
   border: none;
   border-radius: 1rem;
 }
+.btn-checked{
+  background-color: royalblue;
+}
+
 
 .sec{
   display: grid;
@@ -42,3 +46,9 @@ footer a{
   border-radius: 0 0.315rem;
   cursor: pointer;
 }
+
+
+.crimson{
+  color: crimson;
+}
+

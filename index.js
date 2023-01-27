@@ -1,3 +1,4 @@
+//fetch data from the API
 
 const getApi = (apiLink)=>{
     return new Promise((res, rej)=>{
@@ -15,15 +16,14 @@ const getApi = (apiLink)=>{
     });
   }
 
-
+// creat loop and card for data
 let cards = document.getElementById("cards")
   function getFruit(val) {
 
     getApi("./vitamins.json").then((data)=>{
-      console.log(data.length);
-      console.log(data[0])
-      console.log(data[0][val].food)
-      console.log(data[0][val].pic)
+      // console.log(data[0])
+      // console.log(data[0][val].food)
+      // console.log(data[0][val].pic)
       let foodArr = data[0][val].food
       let picArr = data[0][val].pic
       let txtArr = data[0][val].txt
@@ -61,11 +61,21 @@ let cards = document.getElementById("cards")
          cardBody.append(txt);
          txt.textContent = txtArr[i]
         }
+        cardsGroup()
   
-      console.log(data)
+      // console.log(data)
     }).catch((rej) => {
       console.error(rej);
     });
 
   }
 
+
+function cardsGroup() {
+  let fav = document.querySelectorAll(".fa-heart")
+  fav.forEach(e=> e.addEventListener("click",e => {
+
+    e.currentTarget.classList.toggle("crimson")
+    
+  }))
+}
