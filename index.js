@@ -1,3 +1,4 @@
+//fetch data from the API
 
 const getApi = (apiLink)=>{
     return new Promise((res, rej)=>{
@@ -15,7 +16,7 @@ const getApi = (apiLink)=>{
     });
   }
 
-
+// creat loop and card for data
 let cards = document.getElementById("cards")
   function getFruit(val) {
 
