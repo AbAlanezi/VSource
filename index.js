@@ -1,60 +1,65 @@
-let cards = document.getElementById("cards");
 
-const getApi = (apiLink) => {
-  return new Promise((res, rej) => {
-    let XHR = new XMLHttpRequest();
-    XHR.onload = function () {
-      if (this.readyState == 4 && this.status == 200) {
-        res(JSON.parse(this.responseText));
-      } else {
-        rej(Error("Api Is Failed"));
+const getApi = (apiLink)=>{
+    return new Promise((res, rej)=>{
+      let XHR = new XMLHttpRequest();
+      XHR.onload = function() {
+        if(this.readyState == 4 && this.status == 200){
+          res(JSON.parse(this.responseText))
+        }else{
+          rej(Error("Api Is Failed"))
+        }
       }
-    };
-  });
-};
+  
+      XHR.open("GET",apiLink);
+      XHR.send();
+    });
+  }
 
-function getFruit(val) {
-  getApi("./vitamins.json")
-    .then((data) => {
+
+let cards = document.getElementById("cards")
+  function getFruit(val) {
+
+    getApi("./vitamins.json").then((data)=>{
       console.log(data.length);
-      console.log(data[0]);
-      console.log(data[0][val].food);
-      console.log(data[0][val].pic);
-      let foodArr = data[0][val].food;
-      let picArr = data[0][val].pic;
-      cards.innerText = "";
-      for (i = 0; i < foodArr.length; i++) {
+      console.log(data[0])
+      console.log(data[0][val].food)
+      console.log(data[0][val].pic)
+      let foodArr = data[0][val].food
+      let picArr = data[0][val].pic
+      cards.innerText = ""
+      for(i = 0; i < foodArr.length; i++){
         let col = document.createElement("div");
-        col.className = "col";
-        cards.append(col);
+        col.className = "col"
+        cards.append(col)
 
         let card = document.createElement("div");
-        card.className = "card";
+        card.className = "card"
         col.append(card);
 
         let img = document.createElement("img");
-        img.className = "card-img-top";
+        img.className = "card-img-top"
         card.append(img);
-        img.setAttribute("src", picArr[i]);
+        img.setAttribute("src", picArr[i])
 
         let cardBody = document.createElement("div");
-        cardBody.className = "card-body";
+        cardBody.className = "card-body"
         card.append(cardBody);
 
         let h5 = document.createElement("h5");
-        h5.className = "card-title";
+        h5.className = "card-title"
         cardBody.append(h5);
-        h5.textContent = foodArr[i];
+        h5.textContent = foodArr[i]
 
-        let txt = document.createElement("p");
-        txt.className = "card-text";
-        cardBody.append(txt);
-        txt.textContent = "foodArr[i]";
-      }
-
-      console.log(data);
-    })
-    .catch((rej) => {
+         let txt = document.createElement("p");
+         txt.className = "card-text"
+         cardBody.append(txt);
+         txt.textContent = "foodArr[i]"
+        }
+  
+      console.log(data)
+    }).catch((rej) => {
       console.error(rej);
     });
-}
+
+  }
+
