@@ -38,6 +38,10 @@ let cards = document.getElementById("cards")
         card.className = "card"
         col.append(card);
 
+        let icon = document.createElement("i")
+        icon.className = "fa-solid fa-heart"
+        card.append(icon);
+
         let img = document.createElement("img");
         img.className = "card-img-top"
         card.append(img);
