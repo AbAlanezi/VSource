@@ -1,0 +1,64 @@
+[
+    {
+      "A": {
+        "food": ["papaya", "Mango", "Cantaloupe", "Grapefruit", "Watermelon", "Fresh apricots", "Tangerine", "Nectarine", "Guava"],
+        "pic": ["imgs/papaya.png","imgs/papaya.png"],
+        "txt": ["text","texts"]
+      },
+      "C": {
+        "food": ["Guava", "Pineapple", "Strawberries", "Kiwi", "Mango", "Papaya"],
+        "pic": ["imgs/kiwi.png",""],
+        "txt": ["text","texts"]
+      },
+      "B1": {
+        "food": ["Orange", "Avocado" , "Cantaloupe", "Raspberries", "Apricot", "Mango", "Plums", "Kiwi", "Cherries", "Watermelon"],
+        "pic": ["imgs/kiwi.png",""],
+        "txt": ["text","texts"]
+      },
+      "B3": {
+        "food": ["Avocado", "Nectarine", "Peach", "Cantaloupe", "Mango", "Blackberry", "Apricot", "Raspberries", "Orange", "Strawberries"],
+        "pic": ["imgs/kiwi.png",""],
+        "txt": ["text","texts"]
+      },
+      "B6": {
+        "food": ["Avocado", "Honeydew", "Grapes", "Cantaloupe", "Lemon", "Raspberries", "Kiwi", "Grapefruit", "Apricot", "Orange", "Cherries"],
+        "pic": ["imgs/kiwi.png",""],
+        "txt": ["text","texts"]
+      },
+      "B12": {
+        "food": ["Apple", "Banana", "Orange"],
+        "pic": ["https://tafkah.com/wp-content/uploads/2018/07/apple-1.jpg",""],
+        "txt": ["text","texts"]
+      },
+      "Calcium": {
+        "food": ["Orange", "Prickly Pears", "Tangerines", "Kiwi", "Blackberries", "Papaya"],
+        "pic": ["imgs/kiwi.png",""],
+        "txt": ["text","texts"]
+      },
+      "D": {
+        "food": ["Dekopon", "Desert Lime", "Dewberry", "Dragon Fruit", "Durian", "Desert King Fig"],
+        "pic": ["imgs/kiwi.png",""],
+        "txt": ["text","texts"]
+      },
+      "E": {
+        "food": ["kiwi", "food2"],
+        "pic": ["imgs/kiwi.png",""],
+        "txt": ["text","texts"]
+      },
+      "K": {
+        "food": ["Kiwi", "Koroī", "Kaki Persimmon ", "Knobby Russet Apple"],
+        "pic": ["imgs/kiwi.png",""],
+        "txt": ["text","texts"]
+      },
+      "Magnesium": {
+        "food": ["Bananas", "Guavas", "Kiwi", "Papaya", "Blackberries", "Raspberries", "Cantaloupe"],
+        "pic": ["imgs/kiwi.png",""],
+        "txt": ["text","texts"]
+      },
+      "Sodium": {
+        "food": ["kiwi", "Apple", "Avocado", "Mangoes", "Papaya", "Pineapple", "Banana"],
+        "pic": ["imgs/kiwi.png",""],
+        "txt": ["text","texts"]
+      }
+    }
+]
