@@ -40,6 +40,7 @@ let cards = document.getElementById("cards")
 
         let icon = document.createElement("i")
         icon.className = "fa-solid fa-heart"
+        icon.setAttribute("onclick", "favorite(this.parentElement.lastChild.firstChild.textContent)")
         card.append(icon);
 
         let img = document.createElement("img");
@@ -74,8 +75,18 @@ let cards = document.getElementById("cards")
 function cardsGroup() {
   let fav = document.querySelectorAll(".fa-heart")
   fav.forEach(e=> e.addEventListener("click",e => {
-
     e.currentTarget.classList.toggle("crimson")
     
   }))
 }
+
+let arr = []
+function favorite(fuvrit){
+  // let con = JSON.stringify(fuvrit.inner)
+  if(!arr.includes(fuvrit)){
+    arr.push(fuvrit)
+    localStorage.setItem('favouriteCard', arr);
+  }
+  console.log(fuvrit)
+  }
+
