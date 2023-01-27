@@ -1,3 +1,4 @@
+
 const getApi = (apiLink)=>{
     return new Promise((res, rej)=>{
       let XHR = new XMLHttpRequest();
