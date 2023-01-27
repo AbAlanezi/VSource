@@ -10,18 +10,23 @@ footer a{
     height: 100%!important;
   }
 
-section input{
-  -webkit-appearance: none;
-  appearance: none;
-  display: block;
-  height: 20px;
-  width: 20px;
+.vitamin-btn{
+  height: 8rem;
+  border: none;
+  border-radius: 1rem;
 }
 
-section label{
-  display: block;
+.sec{
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 6rem 0;
 }
 
-section .col{
-  position: relative;
+@media (min-width: 875px) {
+  .sec{
+    grid-template-columns: repeat(4, minmax(7rem, 1fr));
+  }
 }
