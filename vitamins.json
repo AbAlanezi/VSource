@@ -27,7 +27,11 @@
       },
       "B12": {
         "food": ["Apple", "Banana", "Orange"],
+<<<<<<< HEAD
         "pic": ["https://tafkah.com/wp-content/uploads/2018/07/apple-1.jpg",""],
+=======
+        "pic": ["imgs/kiwi.png",""],
+>>>>>>> 33648bc658ab1f87ca1c4e1fd8cb4683e79710df
         "txt": ["text","texts"]
       },
       "Calcium": {

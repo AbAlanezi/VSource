@@ -1,6 +1,3 @@
-footer a {
-  text-decoration: none;
-}
 .card img {
   height: 10em;
   object-fit: contain;
@@ -8,37 +5,20 @@ footer a {
 
 .card {
   height: 100% !important;
+}
+
+section input {
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+section label {
+  display: block;
+}
+
+section .col {
   position: relative;
-}
-
-.vitamin-btn {
-  height: 8rem;
-  border: none;
-  border-radius: 1rem;
-}
-
-.sec {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
-  align-items: center;
-  justify-content: center;
-  padding: 3rem 3rem 0;
-}
-
-@media (min-width: 875px) {
-  .sec {
-    grid-template-columns: repeat(4, minmax(7rem, 1fr));
-  }
-}
-
-.fa-heart {
-  position: absolute;
-  right: 0;
-  padding: 1rem;
-  font-size: 22px;
-  background-color: #d2d2d2bf;
-  color: #000000bf;
-  border-radius: 0 0.315rem;
-  cursor: pointer;
 }
