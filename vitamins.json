@@ -1,64 +1,281 @@
+
 [
-    {
-      "A": {
-        "food": ["papaya", "Mango", "Cantaloupe", "Grapefruit", "Watermelon", "Fresh apricots", "Tangerine", "Nectarine", "Guava"],
-        "pic": ["imgs/papaya.png","imgs/papaya.png"],
-        "txt": ["text","texts"]
-      },
-      "C": {
-        "food": ["Guava", "Pineapple", "Strawberries", "Kiwi", "Mango", "Papaya"],
-        "pic": ["imgs/kiwi.png",""],
-        "txt": ["text","texts"]
-      },
-      "B1": {
-        "food": ["Orange", "Avocado" , "Cantaloupe", "Raspberries", "Apricot", "Mango", "Plums", "Kiwi", "Cherries", "Watermelon"],
-        "pic": ["imgs/kiwi.png",""],
-        "txt": ["text","texts"]
-      },
-      "B3": {
-        "food": ["Avocado", "Nectarine", "Peach", "Cantaloupe", "Mango", "Blackberry", "Apricot", "Raspberries", "Orange", "Strawberries"],
-        "pic": ["imgs/kiwi.png",""],
-        "txt": ["text","texts"]
-      },
-      "B6": {
-        "food": ["Avocado", "Honeydew", "Grapes", "Cantaloupe", "Lemon", "Raspberries", "Kiwi", "Grapefruit", "Apricot", "Orange", "Cherries"],
-        "pic": ["imgs/kiwi.png",""],
-        "txt": ["text","texts"]
-      },
-      "B12": {
-        "food": ["Apple", "Banana", "Orange"],
-        "pic": ["https://tafkah.com/wp-content/uploads/2018/07/apple-1.jpg",""],
-        "txt": ["text","texts"]
-      },
-      "Calcium": {
-        "food": ["Orange", "Prickly Pears", "Tangerines", "Kiwi", "Blackberries", "Papaya"],
-        "pic": ["imgs/kiwi.png",""],
-        "txt": ["text","texts"]
-      },
-      "D": {
-        "food": ["Dekopon", "Desert Lime", "Dewberry", "Dragon Fruit", "Durian", "Desert King Fig"],
-        "pic": ["imgs/kiwi.png",""],
-        "txt": ["text","texts"]
-      },
-      "E": {
-        "food": ["kiwi", "food2"],
-        "pic": ["imgs/kiwi.png",""],
-        "txt": ["text","texts"]
-      },
-      "K": {
-        "food": ["Kiwi", "Koroī", "Kaki Persimmon ", "Knobby Russet Apple"],
-        "pic": ["imgs/kiwi.png",""],
-        "txt": ["text","texts"]
-      },
-      "Magnesium": {
-        "food": ["Bananas", "Guavas", "Kiwi", "Papaya", "Blackberries", "Raspberries", "Cantaloupe"],
-        "pic": ["imgs/kiwi.png",""],
-        "txt": ["text","texts"]
-      },
-      "Sodium": {
-        "food": ["kiwi", "Apple", "Avocado", "Mangoes", "Papaya", "Pineapple", "Banana"],
-        "pic": ["imgs/kiwi.png",""],
-        "txt": ["text","texts"]
-      }
+  {
+    "A": {
+      "food": [
+        "Papaya",
+        "Mango",
+        "Cantaloupe",
+        "Grape",
+        "Watermelon",
+        "Apricot",
+        "Tangerine",
+        "Nectarine",
+        "Guava"
+      ],
+      "pic": [
+        "imgs/papaya.png",
+        "imgs/mango.png",
+        "imgs/cantaloupe.png",
+        "imgs/grape.png",
+        "imgs/watermelon.png",
+        "imgs/apricot.png",
+        "imgs/tangerine.png",
+        "imgs/nectarine.png",
+        "imgs/guava.png"
+      ],
+      "txt": [
+        "text",
+        "texts"
+      ]
+    },
+    "C": {
+      "food": [
+        "Guava",
+        "Pineapple",
+        "Strawberries",
+        "Kiwi",
+        "Mango",
+        "Papaya"
+      ],
+      "pic": [
+        "imgs/guava.png",
+        "imgs/pineapple.png",
+        "imgs/strawberry.png",
+        "imgs/kiwi.png",
+        "imgs/mango.png",
+        "imgs/papaya.png"
+      ],
+      "txt": [
+        "text",
+        "texts"
+      ]
+    },
+    "B1": {
+      "food": [
+        "Orange",
+        "Avocado",
+        "Cantaloupe",
+        "Raspberries",
+        "Apricot",
+        "Mango",
+        "Plums",
+        "Kiwi",
+        "Cherries",
+        "Watermelon"
+      ],
+      "pic": [
+        "imgs/orange.png",
+        "imgs/avocado.png",
+        "imgs/cantaloupe.png",
+        "imgs/rasbarry.png",
+        "imgs/apricot.png",
+        "imgs/mango.png",
+        "imgs/plum.png",
+        "imgs/kiwi.png",
+        "imgs/cherry.png",
+        "imgs/watermelon.png"
+      ],
+      "txt": [
+        "text",
+        "texts"
+      ]
+    },
+    "B3": {
+      "food": [
+        "Avocado",
+        "Nectarine",
+        "Peach",
+        "Cantaloupe",
+        "Mango",
+        "Blackberry",
+        "Apricot",
+        "Raspberries",
+        "Orange",
+        "Strawberries"
+      ],
+      "pic": [
+        "imgs/avocado.png",
+        "imgs/nectarine.png",
+        "imgs/peach.png",
+        "imgs/cantaloupe.png",
+        "imgs/mango.png",
+        "imgs/blackberry.png",
+        "imgs/apricot.png",
+        "imgs/rasbarry.png",
+        "imgs/orange.png",
+        "imgs/strawberry.png"
+      ],
+      "txt": [
+        "text",
+        "texts"
+      ]
+    },
+    "B6": {
+      "food": [
+        "Avocado",
+        "Honeydew",
+        "Grape",
+        "Cantaloupe",
+        "Raspberries",
+        "Kiwi",
+        "Apricot",
+        "Orange",
+        "Cherries"
+      ],
+      "pic": [
+        "imgs/kiwi.png",
+        "imgs/honeydew.png",
+        "imgs/grape.png",
+        "imgs/cantaloupe.png",
+        "imgs/rasbarry.png",
+        "imgs/kiwi.png",
+        "imgs/apricot.png",
+        "imgs/orange.png",
+        "imgs/cherry.png"
+      ],
+      "txt": [
+        "text",
+        "texts"
+      ]
+    },
+    "B12": {
+      "food": [
+        "Apple",
+        "Banana",
+        "Orange"
+      ],
+      "pic": [
+        "imgs/apple.png",
+        "imgs/banana.png",
+        "imgs/orange.png"
+      ],
+      "txt": [
+        "text",
+        "texts"
+      ]
+    },
+    "Calcium": {
+      "food": [
+        "Orange",
+        "Prickly Pears",
+        "Tangerines",
+        "Kiwi",
+        "Blackberries",
+        "Papaya"
+      ],
+      "pic": [
+        "imgs/orange.png",
+        "imgs/pricklypears.png",
+        "imgs/tangerine.png",
+        "imgs/kiwi.png",
+        "imgs/blackberry.png",
+        "imgs/papaya.png"
+      ],
+      "txt": [
+        "text",
+        "texts"
+      ]
+    },
+    "D": {
+      "food": [
+        "Dekopon",
+        "Desert Lime",
+        "Dewberry",
+        "Dragon Fruit",
+        "Durian",
+        "Desert King Fig"
+      ],
+      "pic": [
+        "imgs/dekopon.png",
+        "imgs/desertlime.png",
+        "imgs/dewberry.png",
+        "imgs/dragonfruit.png",
+        "imgs/durian.png",
+        "imgs/desertkingfig.png"
+      ],
+      "txt": [
+        "text",
+        "texts"
+      ]
+    },
+    "E": {
+      "food": [
+        "kiwi",
+        ""
+      ],
+      "pic": [
+        "imgs/kiwi.png",
+        ""
+      ],
+      "txt": [
+        "text",
+        "texts"
+      ]
+    },
+    "K": {
+      "food": [
+        "Kiwi",
+        "Kaki Persimmon",
+        "Knobbed Russet Apple"
+      ],
+      "pic": [
+        "imgs/kiwi.png",
+        "imgs/kaki.png",
+        "imgs/knobbed-russet-apple.png"
+      ],
+      "txt": [
+        "text",
+        "texts"
+      ]
+    },
+    "Magnesium": {
+      "food": [
+        "Bananas",
+        "Guava",
+        "Kiwi",
+        "Papaya",
+        "Blackberries",
+        "Raspberries",
+        "Cantaloupe"
+      ],
+      "pic": [
+        "imgs/banana.png",
+        "imgs/guava.png",
+        "imgs/kiwi.png",
+        "imgs/papaya.png",
+        "imgs/blackberry.png",
+        "imgs/rasbarry.png",
+        "imgs/cantaloupe.png"
+      ],
+      "txt": [
+        "text",
+        "texts"
+      ]
+    },
+    "Sodium": {
+      "food": [
+        "kiwi",
+        "Apple",
+        "Avocado",
+        "Mango",
+        "Papaya",
+        "Pineapple",
+        "Banana"
+      ],
+      "pic": [
+        "imgs/kiwi.png",
+        "imgs/apple.png",
+        "imgs/avocado.png",
+        "imgs/mango.png",
+        "imgs/papaya.png",
+        "imgs/pineapple.png",
+        "imgs/banana.png"
+      ],
+      "txt": [
+        "text",
+        "texts"
+      ]
     }
+  }
 ]

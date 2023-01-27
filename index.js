@@ -1,3 +1,4 @@
+//fetch data from the API
 
 const getApi = (apiLink)=>{
     return new Promise((res, rej)=>{
@@ -15,7 +16,7 @@ const getApi = (apiLink)=>{
     });
   }
 
-
+// creat loop and card for data
 let cards = document.getElementById("cards")
   function getFruit(val) {
 
@@ -39,6 +40,7 @@ let cards = document.getElementById("cards")
 
         let icon = document.createElement("button")
         icon.className = "fa-solid fa-heart"
+        icon.setAttribute("onclick", "favorite(this.parentElement.lastChild.firstChild.textContent)")
         card.append(icon);
         icon.setAttribute("onclick", "savedCard(this.parentElement.lastChild.firstChild.textContent)")
 
@@ -74,17 +76,18 @@ let cards = document.getElementById("cards")
 function cardsGroup() {
   let fav = document.querySelectorAll(".fa-heart")
   fav.forEach(e=> e.addEventListener("click",e => {
-
     e.currentTarget.classList.toggle("crimson")
     
   }))
 }
 
 let favArr = []
-function savedCard(par){
-  if(!favArr.includes(par)){
-    favArr.push(par)
+function favorite(fuvrit){
+  // let con = JSON.stringify(fuvrit.inner)
+  if(!favArr.includes(fuvrit)){
+    favArr.push(fuvrit)
     localStorage.setItem('favouriteCard', favArr);
   }
-console.log(favArr);
-}
+  console.log(fuvrit)
+  }
+
