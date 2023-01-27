@@ -26,6 +26,8 @@ let cards = document.getElementById("cards")
       console.log(data[0][val].pic)
       let foodArr = data[0][val].food
       let picArr = data[0][val].pic
+      let txtArr = data[0][val].txt
+
       cards.innerText = ""
       for(i = 0; i < foodArr.length; i++){
         let col = document.createElement("div");
@@ -53,7 +55,7 @@ let cards = document.getElementById("cards")
          let txt = document.createElement("p");
          txt.className = "card-text"
          cardBody.append(txt);
-         txt.textContent = "foodArr[i]"
+         txt.textContent = txtArr[i]
         }
   
       console.log(data)
