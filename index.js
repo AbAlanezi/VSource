@@ -57,17 +57,3 @@ function getFruit(val) {
       console.error(rej);
     });
 }
-
-console.log(
-  [
-    "papaya",
-    "Mango",
-    "Cantaloupe",
-    "Grapefruit",
-    "Watermelon",
-    "Fresh apricots",
-    "Tangerine",
-    "Nectarine",
-    "Guava",
-  ].sort()
-);
