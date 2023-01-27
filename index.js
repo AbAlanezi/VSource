@@ -1,3 +1,5 @@
+let cards = document.getElementById("cards");
+
 const getApi = (apiLink) => {
   return new Promise((res, rej) => {
     let XHR = new XMLHttpRequest();
@@ -11,7 +13,6 @@ const getApi = (apiLink) => {
   });
 };
 
-let cards = document.getElementById("cards");
 function getFruit(val) {
   getApi("./vitamins.json")
     .then((data) => {
