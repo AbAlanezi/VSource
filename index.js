@@ -53,7 +53,6 @@ let cards = document.getElementById("cards")
          txt.className = "card-text"
          cardBody.append(txt);
          txt.textContent = "foodArr[i]"
-
         }
   
       console.log(data)
@@ -63,4 +62,3 @@ let cards = document.getElementById("cards")
 
   }
 
-console.log(["papaya", "Mango", "Cantaloupe", "Grapefruit", "Watermelon", "Fresh apricots", "Tangerine", "Nectarine", "Guava"].sort())
