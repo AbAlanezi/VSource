@@ -23,7 +23,7 @@ nav {
   box-shadow: 0 0.1em 0.2em 0 rgba(31, 38, 135, 0.3);
   backdrop-filter: blur(0.3em);
   -webkit-backdrop-filter: blur(1.5px);
-  border-radius: 1em;
+  border-radius: 0  0 2em 2em;
 }
 
 #login {
@@ -36,7 +36,7 @@ nav {
 }
 
 #login:hover {
-  background: #ffffff;
+  background: #f1f3f1;
   color: #2c3c3b;
   border: 1px solid #2c3c3b;
 }
@@ -218,3 +218,12 @@ nav .hamburger-menu.active .slice:nth-child(3) {
 }
 
 /* nav bar end */
+
+/* favorite pagte */
+#h1-favpage{
+  padding-top: 10%;
+  margin-bottom: 7%;
+}
+/* footer */
+.footer{
+}
