@@ -70,6 +70,8 @@
   color: crimson;
 }
 
+/* header start */
+
 .header {
   margin: 7% 7% 0 7%;
   display: flex;
@@ -98,3 +100,57 @@
   width: 30%;
   height: 30%;
 }
+/* header end */
+
+/* responsive header start */
+
+@media (max-width: 960px) {
+  .header {
+    margin: 15% 7% 0 7%;
+  }
+  .header h1 {
+    font-size: 4.5rem;
+  }
+  .header p {
+    font-size: 1.5rem;
+  }
+  .banana h1 {
+    font-size: 2rem;
+  }
+  .banana p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .header h1 {
+    font-size: 3.5rem;
+  }
+  .header p {
+    font-size: 1rem;
+  }
+  .banana h1 {
+    font-size: 1.5rem;
+  }
+  .banana p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  .header p {
+    font-size: 0.7rem;
+  }
+  .banana h1 {
+    font-size: 1rem;
+  }
+  .banana p {
+    font-size: 0.7rem;
+  }
+}
+
+/* responsive header end */
+
