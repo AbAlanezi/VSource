@@ -149,7 +149,7 @@ btnToggleNav.addEventListener("click", () => {
   btnToggleNav.classList.toggle("active");
 });
 
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
-// });
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+});
 // navbar responsive end
