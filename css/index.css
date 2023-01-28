@@ -1,5 +1,5 @@
 body {
-  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='300' height='300' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform=''%3E%3Crect width='100%25' height='100%25' fill='rgba(255, 255, 255, 1)'/%3E%3Ccircle cx='20' cy='24' r='2' fill='rgba(72, 187, 120,1)'/%3E%3Ccircle cx='20' cy='-16' r='2' fill='rgba(72, 187, 120,1)'/%3E%3Ccircle cx='0' cy='20' r='1' fill='rgba(237, 137, 54,1)'/%3E%3Ccircle cx='20' cy='0' r='1' fill='rgba(237, 137, 54,1)'/%3E%3Ccircle cx='40' cy='20' r='1' fill='rgba(237, 137, 54,1)'/%3E%3Ccircle cx='20' cy='40' r='1' fill='rgba(237, 137, 54,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='300' height='300' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform=''%3E%3Crect width='100%25' height='100%25' fill='rgba(255, 255, 255, 1)'/%3E%3Ccircle cx='20' cy='24' r='2' fill='rgba(72, 187, 120,1)'/%3E%3Ccircle cx='20' cy='-16' r='2' fill='rgba(72, 187, 120,1)'/%3E%3Ccircle cx='0' cy='20' r='1' fill='rgba(237, 137, 54,1)'/%3E%3Ccircle cx='20' cy='0' r='1' fill='rgba(237, 137, 54,1)'/%3E%3Ccircle cx='40' cy='20' r='1' fill='rgba(237, 137, 54,1)'/%3E%3Ccircle cx='20' cy='40' r='1' fill='rgba(237, 137, 54,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
   background-attachment: fixed;
 }
 
@@ -12,8 +12,8 @@ body {
   height: 5rem;
   width: 8em;
   font-family: "montserrat", "Arial Narrow", Arial, sans-serif;
-  /* background: rgba(241, 192, 73, 0.5); */
   background: rgba(241, 192, 73, 0.5);
+  box-shadow: 0 0.2em 1em 0 rgba(241, 192, 73, 0.37);
   backdrop-filter: blur(0.1em);
   -webkit-backdrop-filter: blur(7px);
   border-radius: 10px;
@@ -44,7 +44,7 @@ body {
   justify-content: center;
 }
 
-.cards-sec{
+.cards-sec {
   background-color: #f1f3f1;
   box-shadow: 0 0.3em 0.5em 0 rgba(31, 38, 135, 0.37);
 }
@@ -104,8 +104,11 @@ body {
 /* header start */
 
 header {
+  background-image: url("../imgs/header\ backgreound.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #f8f8f8;
-  box-shadow: 0 0.3em 0.3em 0 rgba(31, 38, 135, 0.30);
+  box-shadow: 0 0.3em 0.3em 0 rgba(31, 38, 135, 0.3);
 }
 
 .header {
