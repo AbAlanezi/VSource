@@ -49,9 +49,9 @@ console.log(favArr)
                     sec.append(card);
 
                     let icon = document.createElement("i")
-                    icon.className = "fa-regular fa-heart crimson"
+                    icon.className = "fa-solid fa-heart crimson"
                     icon.setAttribute("onclick", "favorite(this)")
-                    isLiked(foodArr[i], icon)
+                    isLiked(icon)
                     card.append(icon);
 
                     let img = document.createElement("img");
@@ -126,8 +126,8 @@ function favorite(fuvrit){
         console.log(fuvrit)
     }
     
-    function isLiked(like, icon) {
-        // console.log(like, icon);
+    function isLiked(icon) {
+        // console.log(icon);
         arr = localStorage.getItem('favouriteCard')
         if(arr != null) arr = arr.split(",");
         console.log(arr);
@@ -141,9 +141,6 @@ function favorite(fuvrit){
                 icon.classList.add("fa-regular");
                 icon.classList.remove("fa-solid");
               }
-            if(arr[i] == like){
-
-            }
           }
         }
         
