@@ -25,9 +25,17 @@
         "imgs/guava.png"
       ],
       "txt": [
-        "text",
-        "texts"
-      ]
+        "100g: 19% Vitamin A DV",
+        "100g: 22% Vitamin A DV",
+        "100g: 68% Vitamin A DV ",
+        "100g: 1.3% Vitamin A DV",
+        "100G: 11% Vitamin A DV",
+        "100g: 39% Vitamin A DV",
+        "100g: 14% Vitamin A DV",
+        "100g: 6.6% Vitamin A DV",
+        "100g: 12% Vitamin A DV"
+
+            ]
     },
     "C": {
       "food": [
@@ -47,8 +55,12 @@
         "imgs/papaya.png"
       ],
       "txt": [
-        "text",
-        "texts"
+        "100g: 381% Vitamin C DV",
+        "100g: 80% Vitamin C DV",
+        "100g: 98% Vitamin C DV",
+        "100g: 155% Vitamin C DV",
+        "100g: 61% Vitamin C DV",
+        "100g: 102% Vitamin C DV"
       ]
     },
     "B1": {
@@ -173,8 +185,13 @@
         "imgs/papaya.png"
       ],
       "txt": [
-        "text",
-        "texts"
+        "100g: 3.3% Vitamin Calcium DV",
+        "100g: 4.3% Vitamin Calcium DV",
+        "100g: 2.8% Vitamin Calcium DV",
+        "100g: 2.6% Vitamin Calcium DV",
+        "100g: 2.2% Vitamin Calcium DV",
+        "100g: 1.5% Vitamin Calcium DV"
+
       ]
     },
     "D": {
