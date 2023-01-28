@@ -2,6 +2,7 @@ footer a{
   text-decoration: none;
 }
 .header {
+  margin: 8% 0 0 0;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -83,6 +84,7 @@ footer a{
     font-size: 0.7rem;
     text-align: justify;
   }
+
   
   .img-what {
     width: 50%;
