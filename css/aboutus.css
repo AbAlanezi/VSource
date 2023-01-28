@@ -33,7 +33,8 @@ footer a{
   font-size: 1.5rem;
 }
 
-.img-what {
+.img-header {
+  border-radius: 15px;
   width: 100%;
   height: 600px;
 }
@@ -57,13 +58,11 @@ footer a{
     font-size: 4rem;
   }
 
-
-
   .VSource-h1 {
     font-size: 1.5rem;
   }
 
-  .img-what {
+  .img-header {
     width: 100%;
     height: 300px;
   }
@@ -80,15 +79,32 @@ footer a{
 }
 
 @media only screen and (max-width: 468px) {
+  .h1-header {
+    font-size: 2rem;
+  }
+  
   .paragraph {
     font-size: 0.7rem;
     text-align: justify;
   }
 
   
-  .img-what {
+  .img-header {
     width: 50%;
     height: 250px;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .paragraph {
+    font-size: 0.5rem;
+    text-align: justify;
+  }
+
+  
+  .img-header {
+    width: 50%;
+    height: 200px;
   }
 
 }
