@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css -->
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <!-- css -->
     <!-- bootstrap -->
@@ -12,168 +13,142 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />
     <!-- bootstrap -->
 
     <!-- fontawesome -->
     <script
       src="https://kit.fontawesome.com/6264e73d63.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
 
     <title>VSource</title>
   </head>
   <body>
     <!-- navbar START -->
-    <nav
-      class="navbar navbar-expand-sm d-flex justify-content-center pb-1 pt-1 position-sticky top-0 z-1"
-    >
-      <div class="container-fluid p-0">
-        <a
-          class="navbar-brand nav-link fs-2 ps-4"
-          style="font-family: 'Kaushan Script', cursive"
-          aria-current="page"
-          href="home.html"
-          >VSource</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse position-absolute d-flex justify-content-center w-100 h-100 px-3"
-          id="navbarSupportedContent"
-        >
-          <div class="col d-flex w-100 justify-content-between fs-5">
-            <div class="col w-100"></div>
-            <div class="col w-100 d-flex justify-content-center">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    style="font-weight: 500"
-                    aria-current="page"
-                    href="index.html"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="favorite.html">Favorite</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="aboutus.html">About us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="team.html">Team</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col w-100 d-flex justify-content-end">
-              <ul class="navbar-nav">
-                <li class="nav-item mx-1">
-                  <a class="nav-link btn" href="#">Sign up</a>
-                </li>
-                <li class="nav-item mx-1">
-                  <a class="nav-link btn px-3 primary-btn" href="login.html"
-                    >Login</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <nav>
+      <h2>VSource</h2>
+      <div class="navbar">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/aboutus.html">AboutUs</a></li>
+          <li><a href="/team.html">Team</a></li>
+        </ul>
+      </div>
+
+      <a href="/login.html" type="button" class="connection">Login</a>
+
+      <div class="hamburger-menu">
+        <div class="slice"></div>
+        <div class="slice"></div>
+        <div class="slice"></div>
       </div>
     </nav>
 
     <!-- navbar END -->
-    <section class="sec">
-      <button class="vitamin-btn" onclick="getFruit(this.value)" value="A">
-        A
-      </button>
 
-      <button class="vitamin-btn" onclick="getFruit(this.value)" value="C">
-        C
-      </button>
+    <!-- header start -->
+    <header>
+      <div class="header">
+        <div class="container">
+          <h1 class="h1">VSoursce</h1>
+          <p>Know what vitamins in your fruits !</p>
+        </div>
+        <img src="./imgs/fruits.png" alt="" />
+      </div>
 
-          <button
-          class="vitamin-btn"
-          onclick="getFruit(this.value)"
-          value="B">
+      <div class="header">
+        <img class="someimg" src="./imgs/bananaAI.png" alt="" />
+        <div class="banana">
+          <h1>Eat a banana for a healthy snack 🍌</h1>
+          <p>It has a lot of nutrition and vitamins.</p>
+        </div>
+      </div>
+    </header>
+    <!-- header END -->
+
+    <!-- Vtamins buttons START -->
+    <section class="vitamins-sec">
+      <div>
+        <button class="vitamin-btn" onclick="getFruit(this.value)" value="A">
+          A
+        </button>
+      </div>
+      <div>
+        <button class="vitamin-btn" onclick="getFruit(this.value)" value="C">
+          C
+        </button>
+      </div>
+      <div>
+        <button class="vitamin-btn" onclick="getFruit(this.value)" value="B">
           B1
         </button>
-
-      <button class="vitamin-btn" onclick="getFruit(this.value)" value="B3">
-        B3
-      </button>
-
-      <button class="vitamin-btn" onclick="getFruit(this.value)" value="B6">
-        B6
-      </button>
-
-      <button class="vitamin-btn" onclick="getFruit(this.value)" value="B12">
-        B12
-      </button>
-
-      <button
-        class="vitamin-btn"
-        onclick="getFruit(this.value)"
-        value="Calcium"
-      >
-        Calcium
-      </button>
-
-      <button class="vitamin-btn" onclick="getFruit(this.value)" value="D">
-        D
-      </button>
-
-      <button class="vitamin-btn" onclick="getFruit(this.value)" value="E">
-        E
-      </button>
-
-      <button class="vitamin-btn" onclick="getFruit(this.value)" value="K">
-        K
-      </button>
-
-      <button
-        class="vitamin-btn"
-        onclick="getFruit(this.value)"
-        value="Magnesium"
-      >
-        Magnesium
-      </button>
-
-          <button
+      </div>
+      <div>
+        <button class="vitamin-btn" onclick="getFruit(this.value)" value="B3">
+          B3
+        </button>
+      </div>
+      <div>
+        <button class="vitamin-btn" onclick="getFruit(this.value)" value="B6">
+          B6
+        </button>
+      </div>
+      <div>
+        <button class="vitamin-btn" onclick="getFruit(this.value)" value="B12">
+          B12
+        </button>
+      </div>
+      <div>
+        <button
+          class="vitamin-btn"
+          onclick="getFruit(this.value)"
+          value="Calcium">
+          Calcium
+        </button>
+      </div>
+      <div>
+        <button class="vitamin-btn" onclick="getFruit(this.value)" value="D">
+          D
+        </button>
+      </div>
+      <div>
+        <button class="vitamin-btn" onclick="getFruit(this.value)" value="E">
+          E
+        </button>
+      </div>
+      <div>
+        <button class="vitamin-btn" onclick="getFruit(this.value)" value="K">
+          K
+        </button>
+      </div>
+      <div>
+        <button
+          class="vitamin-btn"
+          onclick="getFruit(this.value)"
+          value="Magnesium">
+          Magnesium
+        </button>
+      </div>
+      <div>
+        <button
           class="vitamin-btn"
           onclick="getFruit(this.value)"
           value="Sodium">
           Sodium
         </button>
-
-
+      </div>
     </section>
+    <!-- vtamins buttons END -->
 
-    <!-- Cards START -->
-
-    <section>
-      <div id="cards" class="row row-cols-1 p-5 row-cols-md-4 g-5"></div>
-    </section>
-    <!-- Cards END -->
+    <!-- cards generater from index.js START -->
+    <section id="fruit-cards"></section>
+    <!-- cards generater from index.js END -->
 
     <!-- Footer START-->
     <footer class="text-center text-lg-start bg-light text-muted">
       <!-- Section: Social media -->
       <section
-        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-      >
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <!-- Left -->
         <div class="me-5 d-none d-lg-block">
           <span>Get connected with us on social networks:</span>
@@ -266,8 +241,7 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script src="index.js"></script>
 
     <!-- scripts -->

@@ -1,58 +1,100 @@
-footer a{
-  text-decoration: none;
-}
 .card img {
-    height: 10em;
-    object-fit: contain;
-  }
-  
-  .card{
-    height: 100%!important;
-    position: relative;
-  }
+  height: 10em;
+  object-fit: contain;
+}
 
-.vitamin-btn{
-  height: 8rem;
+.vitamin-btn {
+  height: 5rem;
+  width: 8em;
   border: none;
   border-radius: 1rem;
 }
-.btn-checked{
+
+.btn-checked {
   background-color: royalblue;
 }
 
-
-.sec{
+/* create responsive grid for the 'vitamin buttons' in home page*/
+.vitamins-sec {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
-  align-items: center;
-  justify-content: center;
-  padding: 3rem 3rem 0;
+  gap: 1em;
+  grid-template-columns: repeat(4, minmax(5rem, 1fr));
+  grid-column-gap: 1em;
+  padding: 3em 3em;
 }
 
-@media (min-width: 875px) {
-  .sec{
-    grid-template-columns: repeat(4, minmax(7rem, 1fr));
+/* grid alignment for 'vitamin buttons' in home page */
+.vitamins-sec > div {
+  display: flex;
+  justify-content: center;
+}
+
+/*create grid for 'fruit cards' section  */
+#fruit-cards {
+  display: grid;
+  justify-content: center;
+  gap: 3em;
+  grid-template-columns: repeat(3, minmax(12em, 1fr));
+  padding: 2em 50%;
+}
+@media (max-width: 600px) {
+  #fruit-cards {
+    grid-template-columns: repeat(4, minmax(10em, 1fr));
+  }
+}
+@media (max-width: 468px) {
+  #fruit-cards {
+    grid-template-columns: repeat(1, minmax(10em, 1fr));
   }
 }
 
-.fa-heart{
+/* fruit card (need imprvments in responsivnees) */
+#fruit-cards > .card {
+  display: flex;
+  justify-content: center;
+  padding: 0.6em;
+}
+
+.fa-heart {
   position: absolute;
   right: 0;
+  bottom: 0;
   padding: 1rem;
-  font-size: 22px;
-  background-color: #d2d2d2bf;
+  font-size: 2em;
   color: #000000bf;
   border-radius: 0 0.315rem;
   cursor: pointer;
 }
 
-
-.crimson{
+.crimson {
   color: crimson;
 }
 
-#cards{
-  padding: 3rem;
-  margin: 0;
+.header {
+  margin: 7% 7% 0 7%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.header h1 {
+  font-size: 7rem;
+}
+
+.header p {
+  font-size: 2rem;
+}
+
+.banana h1 {
+  font-size: 3rem;
+}
+
+.banana p {
+  font-size: 1.5rem;
+}
+
+.header img {
+  width: 30%;
+  height: 30%;
 }
