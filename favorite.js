@@ -134,14 +134,15 @@ function favorite(fuvrit){
         if (arr != null) {
           for (let i = 0; i < arr.length; i++) {
             // console.log(arr[i] == like);
-            if(arr[i] == like){
-              if(icon.classList.contains("fa-regular")){
+            if(icon.classList.contains("fa-regular")){
                 icon.classList.remove("fa-regular");
                 icon.classList.add("fa-solid");
               }else{
                 icon.classList.add("fa-regular");
                 icon.classList.remove("fa-solid");
               }
+            if(arr[i] == like){
+
             }
           }
         }
