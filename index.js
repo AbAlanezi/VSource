@@ -86,6 +86,8 @@ function favorite(fuvrit){
   if(!arr.includes(fuvrit)){
     arr.push(fuvrit)
     localStorage.setItem('favouriteCard', arr);
+  }else if(arr.includes(fuvrit)){
+     arr.splice(fuvrit, 1)
   }
   console.log(fuvrit)
   }
