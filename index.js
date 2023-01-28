@@ -38,8 +38,7 @@ function getFruit(val) {
         let icon = document.createElement("i")
         icon.className = "fa-solid fa-heart"
         isLiked(foodArr[i], icon)
-        icon.setAttribute("onclick", "favorite(this.parentElement.lastChild.firstChild.textContent)")
-        // icon.setAttribute("value", "favorite(this.value)")
+        icon.setAttribute("onclick", "favorite(this)")
         card.append(icon);
 
         let img = document.createElement("img");
@@ -78,6 +77,8 @@ let arr = localStorage.getItem('favouriteCard')
 function favorite(fuvrit){
   arr = localStorage.getItem('favouriteCard')
   if(arr != null) arr = arr.split(",");
+  fuvrit.classList.toggle("crimson");
+  fuvrit = fuvrit.parentElement.lastChild.firstChild.textContent
 console.log(arr, fuvrit);
 
   if (arr == null) {
@@ -99,16 +100,6 @@ console.log(arr, fuvrit);
     }
 }
   console.log(fuvrit)
-}
-  
-
-function cardsGroup() {
-  let fav = document.querySelectorAll(".fa-heart");
-  fav.forEach((e) =>
-    e.addEventListener("click", (e) => {
-      e.currentTarget.classList.toggle("crimson");
-    })
-  );
 }
 
 function isLiked(like, icon) {
