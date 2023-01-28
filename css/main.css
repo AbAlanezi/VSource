@@ -20,20 +20,25 @@ nav {
   z-index: 10;
 
   background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0.1em 0.3em 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 0.1em 0.2em 0 rgba(31, 38, 135, 0.3);
   backdrop-filter: blur(0.3em);
   -webkit-backdrop-filter: blur(1.5px);
   border-radius: 1em;
 }
 
-#login{
-  background: #94B83F;
-  color: #F1F3F1;
-  font-family: 'montserrat', 'Arial Narrow', Arial, sans-serif;
-  /* box-shadow: 0 0.2em 1em 0 rgba(31, 38, 135, 0.37); */
-  border: 1px solid rgba(255, 255, 255, 0.18);
+#login {
+  background: #94b83f;
+  color: #f1f3f1;
+  font-family: "montserrat", "Arial Narrow", Arial, sans-serif;
+  border-radius: 5em;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+}
+
+#login:hover {
+  background: #ffffff;
+  color: #2c3c3b;
+  border: 1px solid #2c3c3b;
 }
 
 #login2 {
