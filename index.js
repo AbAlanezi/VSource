@@ -82,12 +82,10 @@ function cardsGroup() {
 }
 
 let favArr = []
-function favorite(fuvrit){
-  // let con = JSON.stringify(fuvrit.inner)
-  if(!favArr.includes(fuvrit)){
-    favArr.push(fuvrit)
+function savedCard(par){
+  if(!favArr.includes(par)){
+    favArr.push(par)
     localStorage.setItem('favouriteCard', favArr);
   }
-  console.log(fuvrit)
-  }
-
+console.log(favArr);
+}
