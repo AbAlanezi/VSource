@@ -1,3 +1,4 @@
+//fetch data from the API
 
 const getApi = (apiLink)=>{
     return new Promise((res, rej)=>{
@@ -15,17 +16,18 @@ const getApi = (apiLink)=>{
     });
   }
 
-
+// creat loop and card for data
 let cards = document.getElementById("cards")
   function getFruit(val) {
 
     getApi("./vitamins.json").then((data)=>{
-      console.log(data.length);
-      console.log(data[0])
-      console.log(data[0][val].food)
-      console.log(data[0][val].pic)
+      // console.log(data[0])
+      // console.log(data[0][val].food)
+      // console.log(data[0][val].pic)
       let foodArr = data[0][val].food
       let picArr = data[0][val].pic
+      let txtArr = data[0][val].txt
+
       cards.innerText = ""
       for(i = 0; i < foodArr.length; i++){
         let col = document.createElement("div");
@@ -35,6 +37,11 @@ let cards = document.getElementById("cards")
         let card = document.createElement("div");
         card.className = "card"
         col.append(card);
+
+        let icon = document.createElement("i")
+        icon.className = "fa-solid fa-heart"
+        icon.setAttribute("onclick", "favorite(this.parentElement.lastChild.firstChild.textContent)")
+        card.append(icon);
 
         let img = document.createElement("img");
         img.className = "card-img-top"
@@ -53,15 +60,35 @@ let cards = document.getElementById("cards")
          let txt = document.createElement("p");
          txt.className = "card-text"
          cardBody.append(txt);
-         txt.textContent = "foodArr[i]"
-
+         txt.textContent = txtArr[i]
         }
+        cardsGroup()
   
-      console.log(data)
+      // console.log(data)
     }).catch((rej) => {
       console.error(rej);
     });
 
   }
 
-console.log(["papaya", "Mango", "Cantaloupe", "Grapefruit", "Watermelon", "Fresh apricots", "Tangerine", "Nectarine", "Guava"].sort())
+
+function cardsGroup() {
+  let fav = document.querySelectorAll(".fa-heart")
+  fav.forEach(e=> e.addEventListener("click",e => {
+    e.currentTarget.classList.toggle("crimson")
+    
+  }))
+}
+
+let arr = []
+function favorite(fuvrit){
+  // let con = JSON.stringify(fuvrit.inner)
+  if(!arr.includes(fuvrit)){
+    arr.push(fuvrit)
+    localStorage.setItem('favouriteCard', arr);
+  }else if(arr.includes(fuvrit)){
+     arr.splice(fuvrit, 1)
+  }
+  console.log(fuvrit)
+  }
+
