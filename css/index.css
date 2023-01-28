@@ -3,46 +3,55 @@
   object-fit: contain;
 }
 
-.card {
-  height: 100% !important;
-  position: relative;
-}
-
 .vitamin-btn {
   height: 5rem;
   width: 8em;
   border: none;
   border-radius: 1rem;
 }
+
 .btn-checked {
   background-color: royalblue;
 }
 
-.sec {
+/* create responsive grid for the 'vitamin buttons' in home page*/
+.vitamins-sec {
   display: grid;
   gap: 1em;
-  grid-template-columns: 2em 2em 2em;
+  grid-template-columns: repeat(4, minmax(7rem, 1fr));
   grid-column-gap: 1em;
   padding: 3em 3em 0;
 }
 
-.sec > div {
+/* grid alignment for 'vitamin buttons' in home page */
+.vitamins-sec > div {
   display: flex;
   justify-content: center;
 }
 
-@media (min-width: 875px) {
-  .sec {
-    grid-template-columns: repeat(3, minmax(1em, 1fr));
-  }
+/*create grid for 'fruit cards' section  */
+#fruit-cards {
+  display: grid;
+  justify-content: center;
+  gap: 1em;
+  grid-template-columns: repeat(4, minmax(8em, 1fr));
+  grid-column-gap: 1em;
+  padding: 4em 10em;
+}
+
+/* fruit card (need imprvments in responsivnees) */
+#fruit-cards > .card {
+  display: flex;
+  padding: 1em;
+  justify-content: center;
 }
 
 .fa-heart {
   position: absolute;
   right: 0;
+  bottom: 0;
   padding: 1rem;
-  font-size: 22px;
-  background-color: #d2d2d2bf;
+  font-size: 2em;
   color: #000000bf;
   border-radius: 0 0.315rem;
   cursor: pointer;
