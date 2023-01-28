@@ -55,10 +55,10 @@
         "imgs/papaya.png"
       ],
       "txt": [
-        "100g: 381% Vitamin C DV",
+        "100g: 3254% Vitamin C DV",
         "100g: 80% Vitamin C DV",
         "100g: 98% Vitamin C DV",
-        "100g: 155% Vitamin C DV",
+        "100g: 108% Vitamin C DV",
         "100g: 61% Vitamin C DV",
         "100g: 102% Vitamin C DV"
       ]
@@ -72,9 +72,8 @@
         "Apricot",
         "Mango",
         "Plums",
-        "Kiwi",
-        "Cherries",
-        "Watermelon"
+        "Cherries ",
+        "Watermelon "
       ],
       "pic": [
         "imgs/orange.png",
@@ -84,20 +83,25 @@
         "imgs/apricot.png",
         "imgs/mango.png",
         "imgs/plum.png",
-        "imgs/kiwi.png",
         "imgs/cherry.png",
         "imgs/watermelon.png"
       ],
       "txt": [
-        "text",
-        "texts"
+        "100g: 7% Vitamin B1 DV",
+        "100g: 6% Vitamin B1 DV",
+        "100g: 3% Vitamin B1 DV",
+        "100g: 7% Vitamin B1 DV",
+        "100g: 2% Vitamin B1 DV",
+        "100g: 2% Vitamin B1 DV",
+        "100g: 2% Vitamin B1 DV",
+        "100g: 61% Vitamin B1 DV"
       ]
     },
     "B3": {
       "food": [
         "Avocado",
-        "Nectarine",
-        "Peach",
+        "Nectarine ",
+        "Peach ",
         "Cantaloupe",
         "Mango",
         "Blackberry",
@@ -119,8 +123,16 @@
         "imgs/strawberry.png"
       ],
       "txt": [
-        "text",
-        "texts"
+        "100g: 11% Vitamin B3 DV",
+        "100g: 2% Vitamin B3 DV",
+        "100g: 5% Vitamin B3 DV",
+        "100g: 4% Vitamin B3 DV",
+        "100g: 2% Vitamin B3 DV",
+        "100g: 4% Vitamin B3 DV",
+        "100g: 2% Vitamin B3 DV",
+        "100g: 4% Vitamin B3 DV",
+        "100g: 2% Vitamin B3 DV",
+        "100g: 2% Vitamin B3 DV"
       ]
     },
     "B6": {
@@ -147,24 +159,29 @@
         "imgs/cherry.png"
       ],
       "txt": [
-        "text",
-        "texts"
+        "100g: 15% Vitamin B6 DV",
+        "100g: 5% Vitamin B6 DV",
+        "100g: 5% Vitamin B6 DV",
+        "100g: 2% Vitamin B6 DV",
+        "100g: 3% Vitamin B6 DV",
+        "100g: 4% Vitamin B6 DV",
+        "100g: 3% Vitamin B6 DV",
+        "100g: 4% Vitamin B6 DV",
+        "100g: 3% Vitamin B6 DV"
       ]
     },
     "B12": {
       "food": [
-        "Apple",
         "Banana",
         "Orange"
       ],
       "pic": [
-        "imgs/apple.png",
         "imgs/banana.png",
         "imgs/orange.png"
       ],
       "txt": [
-        "text",
-        "texts"
+        "100g: 4% Vitamin B12 DV",
+        "100g: 4% Vitamin B12 DV"
       ]
     },
     "Calcium": {
@@ -185,9 +202,9 @@
         "imgs/papaya.png"
       ],
       "txt": [
-        "100g: 3.3% Vitamin Calcium DV",
-        "100g: 4.3% Vitamin Calcium DV",
-        "100g: 2.8% Vitamin Calcium DV",
+        "100g: 3% Vitamin Calcium DV",
+        "100g: 4% Vitamin Calcium DV",
+        "100g: 3% Vitamin Calcium DV",
         "100g: 2.6% Vitamin Calcium DV",
         "100g: 2.2% Vitamin Calcium DV",
         "100g: 1.5% Vitamin Calcium DV"
@@ -212,22 +229,37 @@
         "imgs/desertkingfig.png"
       ],
       "txt": [
-        "text",
-        "texts"
+        "100g: 3% Vitamin D DV",
+        "100g: 4% Vitamin D DV",
+        "100g: 2% Vitamin D DV",
+        "100g: 23% Vitamin D DV",
+        "100g: 5% Vitamin D DV",
+        "100g: 7% Vitamin D DV"
       ]
     },
     "E": {
       "food": [
-        "kiwi",
-        ""
+        "Avocado",
+        "Mango",
+        "Kiwi",
+        "Blackberries  ",
+        "Mamey Sapote "
       ],
       "pic": [
+        "imgs/avocado.png",
+        "imgs/mango.png",
         "imgs/kiwi.png",
-        ""
+        "imgs/blackberry.png",
+        "imgs/MameySapote.png"
+
+
       ],
       "txt": [
-        "text",
-        "texts"
+        "100g: 14% Vitamin E DV",
+        "100g: 10% Vitamin E DV",
+        "100g: 7% Vitamin E DV",
+        "100g: 6% Vitamin E DV",
+        "100g: 39%  Vitamin E DV"
       ]
     },
     "K": {
@@ -242,8 +274,9 @@
         "imgs/knobbed-russet-apple.png"
       ],
       "txt": [
-        "text",
-        "texts"
+        "100g: 34% Vitamin K DV",
+        "100g: 1.5% Vitamin K DV",
+        "100g: 1.5% Vitamin K DV"
       ]
     },
     "Magnesium": {
@@ -266,13 +299,18 @@
         "imgs/cantaloupe.png"
       ],
       "txt": [
-        "text",
-        "texts"
+        "100g: 6% Vitamin Magnesium DV",
+        "100g: 5% Vitamin Magnesium DV",
+        "100g: 4% Vitamin Magnesium DV",
+        "100g: 5% Vitamin Magnesium DV",
+        "100g: 5% Vitamin Magnesium DV",
+        "100g: 5% Vitamin Magnesium DV",
+        "100g: 3% Vitamin Magnesium DV"
+        
       ]
     },
     "Sodium": {
       "food": [
-        "kiwi",
         "Apple",
         "Avocado",
         "Mango",
@@ -281,7 +319,6 @@
         "Banana"
       ],
       "pic": [
-        "imgs/kiwi.png",
         "imgs/apple.png",
         "imgs/avocado.png",
         "imgs/mango.png",
@@ -290,8 +327,12 @@
         "imgs/banana.png"
       ],
       "txt": [
-        "text",
-        "texts"
+        "100g: 1% Vitamin Sodium DV",
+        "100g: 5% Vitamin Sodium DV",
+        "100g: 3% Vitamin Sodium DV",
+        "100g: 4% Vitamin Sodium DV",
+        "100g: 1% Vitamin Sodium DV",
+        "100g: 3% Vitamin Sodium DV"
       ]
     }
   }
