@@ -37,7 +37,8 @@ function getFruit(val) {
 
         let icon = document.createElement("i")
         icon.className = "fa-solid fa-heart"
-        icon.setAttribute("onclick", "favorite(this.parentElement)")
+        icon.setAttribute("onclick", "favorite(this.parentElement.lastChild.firstChild.textContent)")
+        // icon.setAttribute("value", "favorite(this.value)")
         card.append(icon);
 
         let img = document.createElement("img");
@@ -70,9 +71,8 @@ function getFruit(val) {
 
 let arr = []
 function favorite(fuvrit){
-  fuvrit = fuvrit.cloneNode(true)
-  fuvrit = JSON.stringify(fuvrit)
-  console.log(fuvrit, arr);
+  // fuvrit = fuvrit.cloneNode(true)
+  // console.log(fuvrit, arr);
   
   if(!arr.includes(fuvrit)){
     arr.push(fuvrit)
