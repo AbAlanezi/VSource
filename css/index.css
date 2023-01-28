@@ -49,6 +49,10 @@ body {
   box-shadow: 0 0.3em 0.5em 0 rgba(31, 38, 135, 0.37);
 }
 
+.fruit-cards-favorite {
+  margin-bottom:10%;
+}
+
 /*create grid for 'fruit cards' section  */
 #fruit-cards {
   display: grid;
