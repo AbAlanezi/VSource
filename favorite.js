@@ -49,8 +49,9 @@ console.log(favArr)
                     sec.append(card);
 
                     let icon = document.createElement("i")
-                    icon.className = "fa-solid fa-heart crimson"
+                    icon.className = "fa-regular fa-heart crimson"
                     icon.setAttribute("onclick", "favorite(this)")
+                    isLiked(foodArr[i], icon)
                     card.append(icon);
 
                     let img = document.createElement("img");
@@ -74,7 +75,6 @@ console.log(favArr)
 
                     favArr.splice(favArr.indexOf(favArr[k]), 1)
                 }
-                // cardsGroup();
                 
             }
             
@@ -93,6 +93,13 @@ if(arr != null) arr = arr.split(",");
 
 function favorite(fuvrit){
     fuvrit.classList.toggle("crimson")
+    if(fuvrit.classList.contains("fa-regular")){
+        fuvrit.classList.remove("fa-regular");
+        fuvrit.classList.add("fa-solid");
+      }else{
+        fuvrit.classList.add("fa-regular");
+        fuvrit.classList.remove("fa-solid");
+      }
     fuvrit = fuvrit.parentElement.lastChild.firstChild.textContent
     console.log(arr, fuvrit);
     
@@ -112,6 +119,27 @@ function favorite(fuvrit){
         console.log(fuvrit)
     }
     
+    function isLiked(like, icon) {
+        // console.log(like, icon);
+        arr = localStorage.getItem('favouriteCard')
+        if(arr != null) arr = arr.split(",");
+        console.log(arr);
+        if (arr != null) {
+          for (let i = 0; i < arr.length; i++) {
+            // console.log(arr[i] == like);
+            if(arr[i] == like){
+              if(icon.classList.contains("fa-regular")){
+                icon.classList.remove("fa-regular");
+                icon.classList.add("fa-solid");
+              }else{
+                icon.classList.add("fa-regular");
+                icon.classList.remove("fa-solid");
+              }
+            }
+          }
+        }
+        
+      }
 
 const nav = document.querySelector("nav");
 const btnToggleNav = document.querySelector(".hamburger-menu");
@@ -122,6 +150,6 @@ btnToggleNav.addEventListener("click", () => {
   btnToggleNav.classList.toggle("active");
 });
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-});
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+// });
