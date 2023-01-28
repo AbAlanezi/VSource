@@ -50,7 +50,6 @@ console.log(favArr)
                     let icon = document.createElement("i")
                     icon.className = "fa-solid fa-heart crimson"
                     icon.setAttribute("onclick", "favorite(this.parentElement.lastChild.firstChild.textContent)")
-                    // icon.setAttribute("value", "favorite(this.value)")
                     card.append(icon);
 
                     let img = document.createElement("img");
