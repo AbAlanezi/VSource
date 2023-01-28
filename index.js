@@ -35,12 +35,10 @@ function getFruit(val) {
         card.className = "card";
         fruit_cards.append(card);
 
-        let icon = document.createElement("i");
-        icon.className = "fa-solid fa-heart";
-        icon.setAttribute(
-          "onclick",
-          "favorite(this.parentElement.lastChild.firstChild.textContent)"
-        );
+        let icon = document.createElement("i")
+        icon.className = "fa-solid fa-heart"
+        icon.setAttribute("onclick", "favorite(this.parentElement.lastChild.firstChild.textContent)")
+        // icon.setAttribute("value", "favorite(this.value)")
         card.append(icon);
 
         let img = document.createElement("img");
@@ -73,7 +71,9 @@ function getFruit(val) {
 
 let arr = []
 function favorite(fuvrit){
-  // let con = JSON.stringify(fuvrit.inner)
+  // fuvrit = fuvrit.cloneNode(true)
+  // console.log(fuvrit, arr);
+  
   if(!arr.includes(fuvrit)){
     arr.push(fuvrit)
     localStorage.setItem('favouriteCard', arr);
@@ -82,6 +82,7 @@ function favorite(fuvrit){
   }
   console.log(fuvrit)
   }
+  
 
 function cardsGroup() {
   let fav = document.querySelectorAll(".fa-heart");
