@@ -49,3 +49,40 @@ footer a {
 .crimson {
   color: crimson;
 }
+<<<<<<< HEAD
+=======
+
+.header {
+  margin: 7% 7% 0 7%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.header h1 {
+  font-size: 7rem;
+}
+
+.header p {
+  font-size: 2rem;
+}
+
+.banana h1 {
+  font-size: 3rem;
+}
+
+.banana p {
+  font-size: 1.5rem;
+}
+
+.header img {
+  width: 30%;
+  height: 30%;
+}
+
+.heador {
+  width: 10%;
+  height: 10%;
+}
+>>>>>>> khaled

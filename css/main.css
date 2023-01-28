@@ -1,3 +1,198 @@
+<<<<<<< HEAD
 .active {
   background-color: #65c855;
 }
+=======
+
+
+/* nav bar start*/
+
+nav {
+    position: fixed;
+    top: 0px;
+  
+    width: 100%;
+    height: 75px;
+  
+    background: white;
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    z-index: 10;
+  }
+
+  
+  
+  nav h2 {
+    font-size: 26px;
+    cursor: pointer;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 20px;
+  }
+  
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    display: block; 
+  
+    width: 0px;
+    height: 2px;
+  
+    margin: 0 auto 0 auto;
+  
+    border-radius: 2px;
+  
+    background: black;
+    transition: width 0.2s ease-out;
+  }
+  
+  nav ul li a:hover::after {
+    width: 80%;
+  }
+  nav ul li a:hover {
+    color: #a8a8a8;
+  }
+  
+  nav .connection {
+ 
+    width: 180px;
+    height: auto;
+    padding: 10px 0;
+  
+    border: none;
+    border-radius: 4px;
+  
+    outline: none;
+    background: linear-gradient(84.12deg, #f0f0f0 -24.93%, #f0f0f0 139.25%);
+  
+    color: black;
+  
+    font-size: 18px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    cursor: pointer;
+  }
+  
+  nav .connection:hover {
+    background: linear-gradient(84.12deg, #a8a8a8 139.25%, #a8a8a8 -24.93%);
+  }
+  
+  /* Hamburger */
+  
+  nav .hamburger-menu {
+    display: none;
+    
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  
+    width: 64px;
+    height: 42px;
+  
+    cursor: pointer;
+  }
+
+  
+  
+  nav .hamburger-menu .slice {
+    position: absolute;
+  
+    width: 100%;
+    height: 4px;
+  
+    background: black;
+    border-radius: 4px;
+  
+    transition: all 0.5s ease-in-out;
+  }
+  
+  nav .hamburger-menu .slice:nth-child(1) {
+    top: 0px;
+  }
+  nav .hamburger-menu .slice:nth-child(2) {
+    top: 18px;
+  }
+  nav .hamburger-menu .slice:nth-child(3) {
+    top: 36px;
+  }
+  
+  nav .hamburger-menu.active .slice:nth-child(1) {
+    top: 18px;
+    transform: rotate(135deg);
+  }
+  nav .hamburger-menu.active .slice:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  nav .hamburger-menu.active .slice:nth-child(3) {
+    top: 18px;
+    transform: rotate(-135deg);
+  }
+  
+  /* Medias Queries */
+  
+  @media screen and (max-width: 850px) {
+    /* Navigation */
+  
+    nav {
+      height: auto;
+  
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 15px 0;
+      text-align: center;
+    }
+    nav h2,
+    nav .navbar,
+    nav .connection {
+      position: relative;
+      top: 75px;
+  
+      display: none;
+    }
+  
+    
+    nav .hamburger-menu {
+      display: block;
+    }
+  
+
+  
+    nav.active {
+      padding-bottom: 100px;
+    }
+  
+    nav.active h2,
+    nav.active .navbar,
+    nav.active .connection {
+      position: relative;
+      top: 75px;
+  
+      display: block;
+    }
+  
+  }
+
+  /* nav bar end */
+>>>>>>> khaled
