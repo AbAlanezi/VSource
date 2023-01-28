@@ -213,3 +213,12 @@ nav .hamburger-menu.active .slice:nth-child(3) {
 }
 
 /* nav bar end */
+
+/* favorite pagte */
+#h1-favpage{
+  padding-top: 10%;
+  margin-bottom: 7%;
+}
+/* footer */
+.footer{
+}
