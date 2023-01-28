@@ -111,7 +111,7 @@ nav {
   nav .hamburger-menu .slice {
     position: absolute;
   
-    width: 100%;
+    width: 70%;
     height: 4px;
   
     background: black;
@@ -186,7 +186,7 @@ nav {
       position: relative;
       top: 75px;
   
-      display: block;
+      display: flex;
     }
   
   }
