@@ -1,27 +1,26 @@
-footer a{
+footer a {
   text-decoration: none;
 }
 .card img {
-    height: 10em;
-    object-fit: contain;
-  }
-  
-  .card{
-    height: 100%!important;
-    position: relative;
-  }
+  height: 10em;
+  object-fit: contain;
+}
 
-.vitamin-btn{
+.card {
+  height: 100% !important;
+  position: relative;
+}
+
+.vitamin-btn {
   height: 8rem;
   border: none;
   border-radius: 1rem;
 }
-.btn-checked{
+.btn-checked {
   background-color: royalblue;
 }
 
-
-.sec{
+.sec {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
@@ -31,12 +30,12 @@ footer a{
 }
 
 @media (min-width: 875px) {
-  .sec{
+  .sec {
     grid-template-columns: repeat(4, minmax(7rem, 1fr));
   }
 }
 
-.fa-heart{
+.fa-heart {
   position: absolute;
   right: 0;
   padding: 1rem;
@@ -47,8 +46,40 @@ footer a{
   cursor: pointer;
 }
 
-
-.crimson{
+.crimson {
   color: crimson;
 }
 
+.header {
+  margin: 7% 7% 0 7%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.header h1 {
+  font-size: 7rem;
+}
+
+.header p {
+  font-size: 2rem;
+}
+
+.banana h1 {
+  font-size: 3rem;
+}
+
+.banana p {
+  font-size: 1.5rem;
+}
+
+.header img {
+  width: 30%;
+  height: 30%;
+}
+
+.heador {
+  width: 10%;
+  height: 10%;
+}
