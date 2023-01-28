@@ -79,8 +79,15 @@ console.log(favArr)
             }
             
         }
-      }
-
+        
+    }
+    let h1 = document.getElementById("h1-favpage")
+    if(!sec.innerText){
+      
+       h1.append('No Favorites Fruits')
+    }else{
+        h1.append('Favorites Fruits ')
+    }
 
       // console.log(data)
     })
@@ -146,6 +153,7 @@ btnToggleNav.addEventListener("click", () => {
   btnToggleNav.classList.toggle("active");
 });
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-});
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+// });
+
