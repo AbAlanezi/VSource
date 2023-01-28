@@ -6,9 +6,20 @@
 .vitamin-btn {
   height: 5rem;
   width: 8em;
-  border: none;
-  border-radius: 1rem;
+  font-family: 'montserrat', 'Arial Narrow', Arial, sans-serif;
+  background: rgba(233, 233, 233, 0.7);
+  box-shadow: 0 0.2em 1em 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.2s ease-in-out;
 }
+
+.vitamin-btn:hover {
+  transform: scale(1.1);
+}
+
 
 .btn-checked {
   background-color: royalblue;
@@ -17,9 +28,8 @@
 /* create responsive grid for the 'vitamin buttons' in home page*/
 .vitamins-sec {
   display: grid;
-  gap: 1em;
+  gap: 2em;
   grid-template-columns: repeat(4, minmax(5rem, 1fr));
-  grid-column-gap: 1em;
   padding: 3em 3em;
 }
 
@@ -40,12 +50,17 @@
 @media (max-width: 600px) {
   #fruit-cards {
     grid-template-columns: repeat(4, minmax(10em, 1fr));
+    
   }
 }
 @media (max-width: 468px) {
   #fruit-cards {
     grid-template-columns: repeat(1, minmax(10em, 1fr));
   }
+}
+
+.card{
+  transition: all 0.2s ease-in-out;
 }
 
 /* fruit card (need imprvments in responsivnees) */
@@ -64,10 +79,12 @@
   color: #000000bf;
   border-radius: 0 0.315rem;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .crimson {
   color: crimson;
+  transition: all 0.3s;
 }
 
 /* header start */
@@ -100,9 +117,6 @@
   width: 30%;
   height: 30%;
 }
-/* header end */
-
-/* responsive header start */
 
 @media (max-width: 960px) {
   .header {
@@ -153,4 +167,3 @@
 }
 
 /* responsive header end */
-
