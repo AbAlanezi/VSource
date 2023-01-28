@@ -79,20 +79,21 @@ function favorite(fuvrit){
 
 console.log(arr, fuvrit);
 
-if (arr == null) {
-  let arr = []
-  arr.push(fuvrit)
-  localStorage.setItem('favouriteCard', arr);
-}else{
-  if(!arr.includes(fuvrit)){
+  if (arr == null) {
+    let arr = []
     arr.push(fuvrit)
     localStorage.setItem('favouriteCard', arr);
-  }else if(arr.includes(fuvrit)){
-     arr.splice(arr.indexOf(fuvrit), 1)
-  }
+  }else{
+    if(!arr.includes(fuvrit)){
+      arr.push(fuvrit)
+      localStorage.setItem('favouriteCard', arr);
+    }else{
+      arr.splice(arr.indexOf(fuvrit), 1)
+      localStorage.setItem('favouriteCard', arr);
+    }
 }
   console.log(fuvrit)
-  }
+}
   
 
 function cardsGroup() {
