@@ -37,6 +37,7 @@ function getFruit(val) {
 
         let icon = document.createElement("i")
         icon.className = "fa-solid fa-heart"
+        isLiked(foodArr[i], icon)
         icon.setAttribute("onclick", "favorite(this.parentElement.lastChild.firstChild.textContent)")
         // icon.setAttribute("value", "favorite(this.value)")
         card.append(icon);
@@ -61,6 +62,7 @@ function getFruit(val) {
         txt.textContent = txtArr[i];
       }
       cardsGroup();
+      console.log(arr);
 
       // console.log(data)
     })
@@ -69,19 +71,35 @@ function getFruit(val) {
     });
 }
 
-let arr = []
+let arr = localStorage.getItem('favouriteCard')
+
+
+
 function favorite(fuvrit){
-  // fuvrit = fuvrit.cloneNode(true)
-  // console.log(fuvrit, arr);
-  
-  if(!arr.includes(fuvrit)){
-    arr.push(fuvrit)
-    localStorage.setItem('favouriteCard', arr);
-  }else if(arr.includes(fuvrit)){
-     arr.splice(fuvrit, 1)
-  }
+  arr = localStorage.getItem('favouriteCard')
+  if(arr != null) arr = arr.split(",");
+console.log(arr, fuvrit);
+
+  if (arr == null) {
+    let arrX = []
+    console.log("(arr == null");
+    arrX.push(fuvrit)
+    localStorage.setItem('favouriteCard', arrX);
+    
+
+  }else{
+    if(!arr.includes(fuvrit)){
+      console.log("!arr.includes(fuvrit)");
+      arr.push(fuvrit)
+      localStorage.setItem('favouriteCard', arr);
+    }else{
+      console.log("else");
+      arr.splice(arr.indexOf(fuvrit), 1)
+      localStorage.setItem('favouriteCard', arr);
+    }
+}
   console.log(fuvrit)
-  }
+}
   
 
 function cardsGroup() {
@@ -93,7 +111,22 @@ function cardsGroup() {
   );
 }
 
-// navbar responsive start
+function isLiked(like, icon) {
+  // console.log(like, icon);
+  arr = localStorage.getItem('favouriteCard')
+  if(arr != null) arr = arr.split(",");
+  console.log(arr);
+  if (arr != null) {
+    for (let i = 0; i < arr.length; i++) {
+      if(arr[i] == like){
+        icon.classList.toggle("crimson");
+      }
+    }
+  }
+  
+}
+
+//
 const nav = document.querySelector("nav");
 const btnToggleNav = document.querySelector(".hamburger-menu");
 const form = document.querySelector(".hero-gauche form");
