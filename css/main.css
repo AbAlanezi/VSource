@@ -3,6 +3,11 @@
 }
 
 
+/* remove underline in all links */
+a {
+  text-decoration: none !important;
+}
+
 /* nav bar start*/
 
 nav {
