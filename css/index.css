@@ -14,12 +14,12 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .vitamin-btn:hover {
   transform: scale(1.1);
 }
-
 
 .btn-checked {
   background-color: royalblue;
@@ -29,9 +29,11 @@
 .vitamins-sec {
   display: grid;
   gap: 2em;
-  grid-template-columns: repeat(4, minmax(5rem, 1fr));
+  grid-template-columns: repeat(4, minmax(5em, 1fr));
   padding: 3em 3em;
 }
+
+
 
 /* grid alignment for 'vitamin buttons' in home page */
 .vitamins-sec > div {
@@ -44,18 +46,23 @@
   display: grid;
   justify-content: center;
   gap: 3em;
-  grid-template-columns: repeat(3, minmax(12em, 1fr));
+  grid-template-columns: repeat(4, minmax(11em, 1fr));
   padding: 2em 50%;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
+  .vitamins-sec {
+    grid-template-columns: repeat(3, minmax(5em, 1fr));
+  }
+}
+@media (max-width: 900px) {
   #fruit-cards {
-    grid-template-columns: repeat(4, minmax(10em, 1fr));
+    grid-template-columns: repeat(3, minmax(10em, 1fr));
     
   }
 }
-@media (max-width: 468px) {
+@media (max-width: 600px) {
   #fruit-cards {
-    grid-template-columns: repeat(1, minmax(10em, 1fr));
+    grid-template-columns: repeat(2, minmax(12em, 1fr));
   }
 }
 
