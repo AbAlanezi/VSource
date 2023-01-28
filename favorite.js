@@ -73,6 +73,7 @@ console.log(favArr)
 
                     favArr.splice(favArr.indexOf(favArr[k]), 1)
                 }
+                cardsGroup();
                 
             }
             
@@ -85,3 +86,52 @@ console.log(favArr)
     .catch((rej) => {
       console.error(rej);
     });
+
+    let arr = localStorage.getItem('favouriteCard')
+if(arr != null) arr = arr.split(",");
+
+    function favorite(fuvrit){
+
+        console.log(arr, fuvrit);
+        
+          if (arr == null) {
+            let arr = []
+            arr.push(fuvrit)
+            localStorage.setItem('favouriteCard', arr);
+          }else{
+            if(!arr.includes(fuvrit)){
+              arr.push(fuvrit)
+              localStorage.setItem('favouriteCard', arr);
+            }else{
+              arr.splice(arr.indexOf(fuvrit), 1)
+              localStorage.setItem('favouriteCard', arr);
+            }
+        }
+          console.log(fuvrit)
+        }
+    
+function cardsGroup() {
+  let fav = document.querySelectorAll(".fa-heart");
+  fav.forEach((e) =>
+    e.addEventListener("click", (e) => {
+        if (e.currentTarget.classList.contains("crimson")) {
+            e.currentTarget.classList.remove("crimson")
+        }else{
+            e.currentTarget.classList.add("crimson")
+        }
+    //   e.currentTarget.classList.toggle("crimson");
+    })
+  );
+}
+
+function isLiked(like, icon) {
+  console.log(like);
+  if (arr != null) {
+    for (let i = 0; i < arr.length; i++) {
+      if(arr[i] == like){
+        icon.classList.toggle("crimson");
+      }
+    }
+  }
+  
+}
