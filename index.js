@@ -72,19 +72,25 @@ function getFruit(val) {
 }
 
 let arr = localStorage.getItem('favouriteCard')
-arr = arr.split(",")
+if(arr != null) arr = arr.split(",");
+
 
 function favorite(fuvrit){
-  // fuvrit = fuvrit.cloneNode(true)
-  console.log(fuvrit, arr);
-  // arr = arr.split(",")
-  
+
+console.log(arr, fuvrit);
+
+if (arr == null) {
+  let arr = []
+  arr.push(fuvrit)
+  localStorage.setItem('favouriteCard', arr);
+}else{
   if(!arr.includes(fuvrit)){
     arr.push(fuvrit)
     localStorage.setItem('favouriteCard', arr);
   }else if(arr.includes(fuvrit)){
      arr.splice(arr.indexOf(fuvrit), 1)
   }
+}
   console.log(fuvrit)
   }
   

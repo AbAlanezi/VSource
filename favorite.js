@@ -27,7 +27,7 @@ console.log(favArr)
     //   console.log(Object.keys(data[0]))
       // console.log(data[0][val].food)
       // console.log(data[0][val].pic)
-
+      
 
     let vitaminsArr = Object.keys(data[0])
 
@@ -42,7 +42,7 @@ console.log(favArr)
             console.log(data[0][vitaminsArr[i]].food[j]);
             for (let k = 0; k < favArr.length; k++) {
                 if (data[0][vitaminsArr[i]].food[j] == favArr[k]) {
-                    console.log(data[0][vitaminsArr[i]].food[j], favArr[k]);
+
                     let card = document.createElement("div");
                     card.className = "card";
                     sec.append(card);
@@ -71,46 +71,17 @@ console.log(favArr)
                     cardBody.append(txt);
                     txt.textContent = txtArr[j];
 
-                    favArr.shift()
-                    
+                    favArr.splice(favArr.indexOf(favArr[k]), 1)
                 }
                 
             }
             
         }
       }
-    //   cardsGroup();
+
 
       // console.log(data)
     })
     .catch((rej) => {
       console.error(rej);
     });
-
-    // let card = document.createElement("div");
-    // card.className = "card";
-    // fruit_cards.append(card);
-
-    // let icon = document.createElement("i")
-    // icon.className = "fa-solid fa-heart"
-    // icon.setAttribute("onclick", "favorite(this.parentElement.lastChild.firstChild.textContent)")
-    // card.append(icon);
-
-    // let img = document.createElement("img");
-    // img.className = "card-img-top";
-    // card.append(img);
-    // img.setAttribute("src", picArr[i]);
-
-    // let cardBody = document.createElement("div");
-    // cardBody.className = "card-body";
-    // card.append(cardBody);
-
-    // let h5 = document.createElement("h5");
-    // h5.className = "card-title";
-    // cardBody.append(h5);
-    // h5.textContent = foodArr[i];
-
-    // let txt = document.createElement("p");
-    // txt.className = "card-text";
-    // cardBody.append(txt);
-    // txt.textContent = txtArr[i];
