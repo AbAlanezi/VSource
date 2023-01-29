@@ -93,7 +93,7 @@ body {
 .fa-heart {
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 0;
   padding: 1rem;
   font-size: 2em;
   color: #000000bf;
@@ -103,7 +103,7 @@ body {
 }
 
 .crimson {
-  color: crimson;
+  color: rgba(220, 20, 60, 0.75);
   transition: all 0.3s;
 }
 
