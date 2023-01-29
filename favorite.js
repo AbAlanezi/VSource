@@ -100,13 +100,7 @@ if(arr != null) arr = arr.split(",");
 
 function favorite(fuvrit){
     fuvrit.classList.toggle("crimson")
-    if(fuvrit.classList.contains("fa-regular")){
-        fuvrit.classList.remove("fa-regular");
-        fuvrit.classList.add("fa-solid");
-      }else{
-        fuvrit.classList.add("fa-regular");
-        fuvrit.classList.remove("fa-solid");
-      }
+    unlike(fuvrit)
     fuvrit = fuvrit.parentElement.lastChild.firstChild.textContent
     console.log(arr, fuvrit);
     
@@ -134,13 +128,7 @@ function favorite(fuvrit){
         if (arr != null) {
           for (let i = 0; i < arr.length; i++) {
             // console.log(arr[i] == like);
-            if(icon.classList.contains("fa-regular")){
-                icon.classList.remove("fa-regular");
-                icon.classList.add("fa-solid");
-              }else{
-                icon.classList.add("fa-regular");
-                icon.classList.remove("fa-solid");
-              }
+
           }
         }
         
@@ -158,3 +146,13 @@ btnToggleNav.addEventListener("click", () => {
 // form.addEventListener("submit", (e) => {
 //   e.preventDefault();
 // });
+
+function unlike(icon) {
+    if(icon.classList.contains("fa-regular")){
+    icon.classList.remove("fa-regular");
+    icon.classList.add("fa-solid");
+    }else{
+    icon.classList.add("fa-regular");
+    icon.classList.remove("fa-solid");
+    }
+}
