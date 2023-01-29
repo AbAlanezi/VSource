@@ -2,7 +2,6 @@ footer a{
   text-decoration: none;
 }
 .header {
-  /* margin: 4% 0 0 0; */
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -70,6 +69,12 @@ footer a{
   .paragraph {
     font-size: 1.5rem;
   }
+}
+@media only screen and (max-width: 850px) {
+  .header {
+    margin-top: 5%;
+  }
+  
 }
 
 @media only screen and (max-width: 766px) {

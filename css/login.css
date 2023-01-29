@@ -21,10 +21,8 @@
 }
 
 @media only screen and (max-width: 1300px) {
-  .someimg {
+  .login-img {
     display: none;
-    width: 50%;
-    height: 35%;
   }
 }
 
