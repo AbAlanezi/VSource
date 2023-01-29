@@ -35,10 +35,13 @@ function getFruit(val) {
         card.className = "card";
         fruit_cards.append(card);
 
-        let icon = document.createElement("i")
-        icon.className = "fa-solid fa-heart"
-        isLiked(foodArr[i], icon)
-        icon.setAttribute("onclick", "favorite(this.parentElement.lastChild.firstChild.textContent)")
+        let icon = document.createElement("i");
+        icon.className = "fa-solid fa-heart";
+        isLiked(foodArr[i], icon);
+        icon.setAttribute(
+          "onclick",
+          "favorite(this.parentElement.lastChild.firstChild.textContent)"
+        );
         // icon.setAttribute("value", "favorite(this.value)")
         card.append(icon);
 
@@ -71,36 +74,31 @@ function getFruit(val) {
     });
 }
 
-let arr = localStorage.getItem('favouriteCard')
+let arr = localStorage.getItem("favouriteCard");
 
-
-
-function favorite(fuvrit){
-  arr = localStorage.getItem('favouriteCard')
-  if(arr != null) arr = arr.split(",");
-console.log(arr, fuvrit);
+function favorite(fuvrit) {
+  arr = localStorage.getItem("favouriteCard");
+  if (arr != null) arr = arr.split(",");
+  console.log(arr, fuvrit);
 
   if (arr == null) {
-    let arrX = []
+    let arrX = [];
     console.log("(arr == null");
-    arrX.push(fuvrit)
-    localStorage.setItem('favouriteCard', arrX);
-    
-
-  }else{
-    if(!arr.includes(fuvrit)){
+    arrX.push(fuvrit);
+    localStorage.setItem("favouriteCard", arrX);
+  } else {
+    if (!arr.includes(fuvrit)) {
       console.log("!arr.includes(fuvrit)");
-      arr.push(fuvrit)
-      localStorage.setItem('favouriteCard', arr);
-    }else{
+      arr.push(fuvrit);
+      localStorage.setItem("favouriteCard", arr);
+    } else {
       console.log("else");
-      arr.splice(arr.indexOf(fuvrit), 1)
-      localStorage.setItem('favouriteCard', arr);
+      arr.splice(arr.indexOf(fuvrit), 1);
+      localStorage.setItem("favouriteCard", arr);
     }
+  }
+  console.log(fuvrit);
 }
-  console.log(fuvrit)
-}
-  
 
 function cardsGroup() {
   let fav = document.querySelectorAll(".fa-heart");
@@ -113,17 +111,16 @@ function cardsGroup() {
 
 function isLiked(like, icon) {
   // console.log(like, icon);
-  arr = localStorage.getItem('favouriteCard')
-  if(arr != null) arr = arr.split(",");
+  arr = localStorage.getItem("favouriteCard");
+  if (arr != null) arr = arr.split(",");
   console.log(arr);
   if (arr != null) {
     for (let i = 0; i < arr.length; i++) {
-      if(arr[i] == like){
+      if (arr[i] == like) {
         icon.classList.toggle("crimson");
       }
     }
   }
-  
 }
 
 //
@@ -140,3 +137,5 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 });
 // navbar responsive end
+
+// vitamins button

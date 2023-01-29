@@ -27,6 +27,11 @@ body {
   transform: scale(1.1);
 }
 
+.vitamin-btn:active {
+  transform: scale(1);
+  background: rgba(241, 192, 73, 1);
+}
+
 .btn-checked {
   background-color: royalblue;
 }
