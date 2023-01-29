@@ -1,5 +1,5 @@
 body {
-  background: url("../imgs/vitamins-btns-backgoround.png");
+  /* background: url("../imgs/vitamins-btns-backgoround.png"); */
   background-attachment: fixed;
   background-size: cover;
 }
@@ -55,6 +55,10 @@ body {
   box-shadow: 0 0.3em 0.5em 0 rgba(31, 38, 135, 0.37);
 }
 
+.fruit-cards-favorite {
+  margin-bottom:10%;
+}
+
 /*create grid for 'fruit cards' section  */
 #fruit-cards {
   display: grid;
@@ -65,7 +69,7 @@ body {
 }
 @media (max-width: 500px) {
   .vitamins-sec {
-    grid-template-columns: repeat(3, minmax(5em, 1fr));
+    grid-template-columns: repeat(2, minmax(5em, 1fr));
   }
 }
 @media (max-width: 900px) {
@@ -76,6 +80,11 @@ body {
 @media (max-width: 600px) {
   #fruit-cards {
     grid-template-columns: repeat(2, minmax(12em, 1fr));
+  }
+}
+@media (max-width: 500px) {
+  #fruit-cards {
+    grid-template-columns: repeat(1, minmax(12em, 1fr));
   }
 }
 
@@ -93,7 +102,7 @@ body {
 .fa-heart {
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 0;
   padding: 1rem;
   font-size: 2em;
   color: #000000bf;
@@ -103,7 +112,7 @@ body {
 }
 
 .crimson {
-  color: crimson;
+  color: rgba(220, 20, 60, 0.75);
   transition: all 0.3s;
 }
 

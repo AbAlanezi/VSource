@@ -55,7 +55,7 @@
         "imgs/papaya.png"
       ],
       "txt": [
-        "100g: 3254% Vitamin C DV",
+        "100g: 254% Vitamin C DV",
         "100g: 80% Vitamin C DV",
         "100g: 98% Vitamin C DV",
         "100g: 108% Vitamin C DV",
@@ -242,7 +242,7 @@
         "Avocado",
         "Mango",
         "Kiwi",
-        "Blackberries  ",
+        "Blackberries",
         "Mamey Sapote "
       ],
       "pic": [
@@ -281,7 +281,7 @@
     },
     "Magnesium": {
       "food": [
-        "Bananas",
+        "Banana",
         "Guava",
         "Kiwi",
         "Papaya",
