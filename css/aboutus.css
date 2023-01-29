@@ -78,12 +78,18 @@ footer a{
 }
 
 @media only screen and (max-width: 766px) {
+  .header {
+    margin-top: 8%;
+  }
   .paragraph {
     font-size: 1rem;
   }
 }
 
 @media only screen and (max-width: 468px) {
+  .header {
+    margin-top: 10%;
+  }
   .h1-header {
     font-size: 2rem;
   }
@@ -101,6 +107,9 @@ footer a{
 }
 
 @media only screen and (max-width: 290px) {
+  .header {
+    margin-top: 13%;
+  }
   .paragraph {
     font-size: 0.5rem;
     text-align: justify;
