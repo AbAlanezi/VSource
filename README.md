@@ -1,2 +1,2 @@
 # VSource
-A web site that provides the user with the sources of vitamins he needs
+provides detailed information about vitamins, their sources and how they can be beneficial for overall health.
