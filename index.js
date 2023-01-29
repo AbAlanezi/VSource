@@ -22,6 +22,7 @@ const fruit_cards = document.getElementById("fruit-cards");
 console.log(fruit_cards);
 function getFruit(val) {
   if (!btnChecked.includes(val)) {
+    window.scrollBy(15, 350)
     btnChecked.push(val);
   } else {
     btnChecked.splice(btnChecked.indexOf(val), 1);
