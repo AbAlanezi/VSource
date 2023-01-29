@@ -50,7 +50,8 @@ console.log(favArr)
 
                     let icon = document.createElement("i")
                     icon.className = "fa-solid fa-heart crimson"
-                    icon.setAttribute("onclick", "favorite(this.parentElement.lastChild.firstChild.textContent)")
+                    icon.setAttribute("onclick", "favorite(this)")
+                    isLiked(icon)
                     card.append(icon);
 
                     let img = document.createElement("img");
@@ -74,7 +75,6 @@ console.log(favArr)
 
                     favArr.splice(favArr.indexOf(favArr[k]), 1)
                 }
-                cardsGroup();
                 
             }
             
@@ -98,51 +98,53 @@ console.log(favArr)
     let arr = localStorage.getItem('favouriteCard')
 if(arr != null) arr = arr.split(",");
 
-    function favorite(fuvrit){
-
-        console.log(arr, fuvrit);
-        
-          if (arr == null) {
-            let arr = []
+function favorite(fuvrit){
+    fuvrit.classList.toggle("crimson")
+    if(fuvrit.classList.contains("fa-regular")){
+        fuvrit.classList.remove("fa-regular");
+        fuvrit.classList.add("fa-solid");
+      }else{
+        fuvrit.classList.add("fa-regular");
+        fuvrit.classList.remove("fa-solid");
+      }
+    fuvrit = fuvrit.parentElement.lastChild.firstChild.textContent
+    console.log(arr, fuvrit);
+    
+        if (arr == null) {
+        let arr = []
+        arr.push(fuvrit)
+        localStorage.setItem('favouriteCard', arr);
+        }else{
+        if(!arr.includes(fuvrit)){
             arr.push(fuvrit)
             localStorage.setItem('favouriteCard', arr);
-          }else{
-            if(!arr.includes(fuvrit)){
-              arr.push(fuvrit)
-              localStorage.setItem('favouriteCard', arr);
-            }else{
-              arr.splice(arr.indexOf(fuvrit), 1)
-              localStorage.setItem('favouriteCard', arr);
-            }
-        }
-          console.log(fuvrit)
-        }
-    
-function cardsGroup() {
-  let fav = document.querySelectorAll(".fa-heart");
-  fav.forEach((e) =>
-    e.addEventListener("click", (e) => {
-        if (e.currentTarget.classList.contains("crimson")) {
-            e.currentTarget.classList.remove("crimson")
         }else{
-            e.currentTarget.classList.add("crimson")
+            arr.splice(arr.indexOf(fuvrit), 1)
+            localStorage.setItem('favouriteCard', arr);
         }
-    //   e.currentTarget.classList.toggle("crimson");
-    })
-  );
-}
-
-function isLiked(like, icon) {
-  console.log(like);
-  if (arr != null) {
-    for (let i = 0; i < arr.length; i++) {
-      if(arr[i] == like){
-        icon.classList.toggle("crimson");
-      }
     }
-  }
-  
-}
+        console.log(fuvrit)
+    }
+    
+    function isLiked(icon) {
+        // console.log(icon);
+        arr = localStorage.getItem('favouriteCard')
+        if(arr != null) arr = arr.split(",");
+        console.log(arr);
+        if (arr != null) {
+          for (let i = 0; i < arr.length; i++) {
+            // console.log(arr[i] == like);
+            if(icon.classList.contains("fa-regular")){
+                icon.classList.remove("fa-regular");
+                icon.classList.add("fa-solid");
+              }else{
+                icon.classList.add("fa-regular");
+                icon.classList.remove("fa-solid");
+              }
+          }
+        }
+        
+      }
 
 const nav = document.querySelector("nav");
 const btnToggleNav = document.querySelector(".hamburger-menu");
@@ -156,4 +158,3 @@ btnToggleNav.addEventListener("click", () => {
 // form.addEventListener("submit", (e) => {
 //   e.preventDefault();
 // });
-
