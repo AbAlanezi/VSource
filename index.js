@@ -16,15 +16,15 @@ const getApi = (apiLink) => {
   });
 };
 
-let btnChecked = []
+let btnChecked = [];
 // creat loop and card for data
 const fruit_cards = document.getElementById("fruit-cards");
 console.log(fruit_cards);
 function getFruit(val) {
-  if(!btnChecked.includes(val)){
-    btnChecked.push(val)
-  }else{
-    btnChecked.splice(btnChecked.indexOf(val), 1)
+  if (!btnChecked.includes(val)) {
+    btnChecked.push(val);
+  } else {
+    btnChecked.splice(btnChecked.indexOf(val), 1);
   }
 
   getApi("./vitamins.json")
@@ -42,10 +42,10 @@ function getFruit(val) {
         card.className = "card";
         fruit_cards.append(card);
 
-        let icon = document.createElement("i")
-        icon.className = "fa-heart fa-regular"
-        isLiked(foodArr[i], icon)
-        icon.setAttribute("onclick", "favorite(this)")
+        let icon = document.createElement("i");
+        icon.className = "fa-heart fa-regular";
+        isLiked(foodArr[i], icon);
+        icon.setAttribute("onclick", "favorite(this)");
         card.append(icon);
 
         let img = document.createElement("img");
@@ -79,22 +79,20 @@ function getFruit(val) {
 
 let arr = localStorage.getItem("favouriteCard");
 
-
-
-function favorite(fuvrit){
-  arr = localStorage.getItem('favouriteCard')
-  if(arr != null) arr = arr.split(",");
+function favorite(fuvrit) {
+  arr = localStorage.getItem("favouriteCard");
+  if (arr != null) arr = arr.split(",");
   fuvrit.classList.toggle("crimson");
-  if(fuvrit.classList.contains("fa-regular")){
+  if (fuvrit.classList.contains("fa-regular")) {
     fuvrit.classList.remove("fa-regular");
     fuvrit.classList.add("fa-solid");
-  }else{
+  } else {
     fuvrit.classList.add("fa-regular");
     fuvrit.classList.remove("fa-solid");
   }
 
-  fuvrit = fuvrit.parentElement.lastChild.firstChild.textContent
-console.log(arr, fuvrit);
+  fuvrit = fuvrit.parentElement.lastChild.firstChild.textContent;
+  console.log(arr, fuvrit);
 
   if (arr == null) {
     let arrX = [];
@@ -114,8 +112,7 @@ console.log(arr, fuvrit);
   }
   console.log(fuvrit);
 }
-  console.log(fuvrit)
-}
+console.log(fuvrit);
 
 function isLiked(like, icon) {
   // console.log(like, icon);
@@ -126,10 +123,10 @@ function isLiked(like, icon) {
     for (let i = 0; i < arr.length; i++) {
       if (arr[i] == like) {
         icon.classList.toggle("crimson");
-        if(icon.classList.contains("fa-regular")){
+        if (icon.classList.contains("fa-regular")) {
           icon.classList.remove("fa-regular");
           icon.classList.add("fa-solid");
-        }else{
+        } else {
           icon.classList.add("fa-regular");
           icon.classList.remove("fa-solid");
         }
