@@ -16,10 +16,17 @@ const getApi = (apiLink) => {
   });
 };
 
+let btnChecked = []
 // creat loop and card for data
 const fruit_cards = document.getElementById("fruit-cards");
 console.log(fruit_cards);
 function getFruit(val) {
+  if(!btnChecked.includes(val)){
+    btnChecked.push(val)
+  }else{
+    btnChecked.splice(btnChecked.indexOf(val), 1)
+  }
+
   getApi("./vitamins.json")
     .then((data) => {
       // console.log(data[0])
@@ -36,10 +43,9 @@ function getFruit(val) {
         fruit_cards.append(card);
 
         let icon = document.createElement("i")
-        icon.className = "fa-solid fa-heart"
+        icon.className = "fa-heart fa-regular"
         isLiked(foodArr[i], icon)
-        icon.setAttribute("onclick", "favorite(this.parentElement.lastChild.firstChild.textContent)")
-        // icon.setAttribute("value", "favorite(this.value)")
+        icon.setAttribute("onclick", "favorite(this)")
         card.append(icon);
 
         let img = document.createElement("img");
@@ -78,6 +84,16 @@ let arr = localStorage.getItem('favouriteCard')
 function favorite(fuvrit){
   arr = localStorage.getItem('favouriteCard')
   if(arr != null) arr = arr.split(",");
+  fuvrit.classList.toggle("crimson");
+  if(fuvrit.classList.contains("fa-regular")){
+    fuvrit.classList.remove("fa-regular");
+    fuvrit.classList.add("fa-solid");
+  }else{
+    fuvrit.classList.add("fa-regular");
+    fuvrit.classList.remove("fa-solid");
+  }
+
+  fuvrit = fuvrit.parentElement.lastChild.firstChild.textContent
 console.log(arr, fuvrit);
 
   if (arr == null) {
@@ -100,16 +116,6 @@ console.log(arr, fuvrit);
 }
   console.log(fuvrit)
 }
-  
-
-function cardsGroup() {
-  let fav = document.querySelectorAll(".fa-heart");
-  fav.forEach((e) =>
-    e.addEventListener("click", (e) => {
-      e.currentTarget.classList.toggle("crimson");
-    })
-  );
-}
 
 function isLiked(like, icon) {
   // console.log(like, icon);
@@ -120,6 +126,13 @@ function isLiked(like, icon) {
     for (let i = 0; i < arr.length; i++) {
       if(arr[i] == like){
         icon.classList.toggle("crimson");
+        if(icon.classList.contains("fa-regular")){
+          icon.classList.remove("fa-regular");
+          icon.classList.add("fa-solid");
+        }else{
+          icon.classList.add("fa-regular");
+          icon.classList.remove("fa-solid");
+        }
       }
     }
   }
@@ -136,7 +149,7 @@ btnToggleNav.addEventListener("click", () => {
   btnToggleNav.classList.toggle("active");
 });
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-});
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+// });
 // navbar responsive end
